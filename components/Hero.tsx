@@ -1,0 +1,81 @@
+import React from 'react';
+import { ArrowDown } from 'lucide-react';
+import { Reveal } from './ui/Section';
+import { VortexCanvas } from './ui/VortexCanvas';
+
+export const Hero: React.FC = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-vortex-black">
+      {/* Background Animation */}
+      <div className="absolute inset-0 z-0">
+        <VortexCanvas />
+        {/* Subtle Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-vortex-black/30 via-transparent to-vortex-black pointer-events-none"></div>
+        <div className="absolute inset-0 bg-grid-pattern bg-[length:60px_60px] opacity-[0.03] pointer-events-none"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+        <Reveal>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vortex-accent/30 bg-vortex-accent/5 text-vortex-accent text-xs font-mono font-bold tracking-widest uppercase mb-8 hover:bg-vortex-accent/10 transition-colors cursor-default backdrop-blur-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-vortex-accent opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-vortex-accent"></span>
+            </span>
+            System Online
+          </div>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-9xl tracking-tighter text-white mb-8 leading-[0.9]">
+            ENTER THE <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vortex-accent via-white to-vortex-accent animate-pulse bg-300% bg-left">
+              VORTEX
+            </span>
+          </h1>
+        </Reveal>
+
+        <Reveal delay={400}>
+          <p className="max-w-2xl mx-auto text-vortex-muted text-lg md:text-xl mb-12 leading-relaxed font-light backdrop-blur-sm p-4 rounded-lg bg-black/20 border border-white/5">
+            Aceleramos a evolução digital da sua empresa. Engenharia de software complexa simplificada em experiências digitais imersivas.
+          </p>
+        </Reveal>
+
+        <Reveal delay={600}>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <a
+              href="#contact"
+              className="w-full md:w-auto px-8 py-4 bg-vortex-accent text-black font-bold rounded hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all duration-300 transform hover:-translate-y-1"
+            >
+              Iniciar Projeto _&gt;
+            </a>
+            <a
+              href="#projects"
+              className="w-full md:w-auto px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium rounded hover:border-vortex-accent hover:text-vortex-accent transition-colors duration-300"
+            >
+              Ver Portfolio
+            </a>
+          </div>
+        </Reveal>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 animate-bounce" aria-hidden="true">
+        <ArrowDown className="w-6 h-6" />
+      </div>
+
+      <style>
+        {`
+        .bg-300% {
+            background-size: 300% auto;
+            animation: gradient-move 5s ease infinite;
+        }
+        @keyframes gradient-move {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+      `}
+      </style>
+    </section>
+  );
+};
