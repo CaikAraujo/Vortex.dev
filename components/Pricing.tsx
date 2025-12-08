@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { Check, Sparkles, Zap } from 'lucide-react';
 import { PRICING } from '../constants';

@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Send, Mail, MapPin, Phone, Terminal } from 'lucide-react';
 import { Reveal } from './ui/Section';
@@ -59,6 +61,29 @@ export const Contact: React.FC = () => {
                 <div className="space-y-2">
                   <label htmlFor="company" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Empresa</label>
                   <input id="company" type="text" className="w-full bg-white/5 border border-white/10 rounded-sm p-4 text-white focus:border-vortex-accent focus:bg-white/10 focus:outline-none transition-all" placeholder="Sua empresa" />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label htmlFor="source" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Como nos conheceu?</label>
+                  <select id="source" className="w-full bg-white/5 border border-white/10 rounded-sm p-4 text-white focus:border-vortex-accent focus:bg-white/10 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" className="bg-vortex-dark text-gray-400">Selecione...</option>
+                    <option value="linkedin" className="bg-vortex-dark text-white">LinkedIn</option>
+                    <option value="google" className="bg-vortex-dark text-white">Google</option>
+                    <option value="referral" className="bg-vortex-dark text-white">Indicação</option>
+                    <option value="other" className="bg-vortex-dark text-white">Outro</option>
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="budget" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Orçamento Estimado</label>
+                  <select id="budget" className="w-full bg-white/5 border border-white/10 rounded-sm p-4 text-white focus:border-vortex-accent focus:bg-white/10 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" className="bg-vortex-dark text-gray-400">Selecione...</option>
+                    <option value="sm" className="bg-vortex-dark text-white">Até R$ 5k</option>
+                    <option value="md" className="bg-vortex-dark text-white">R$ 5k - R$ 10k</option>
+                    <option value="lg" className="bg-vortex-dark text-white">R$ 10k - R$ 20k</option>
+                    <option value="xl" className="bg-vortex-dark text-white">+R$ 20k</option>
+                  </select>
                 </div>
               </div>
 

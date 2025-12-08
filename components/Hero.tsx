@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Reveal } from './ui/Section';
@@ -43,7 +45,7 @@ export const Hero: React.FC = () => {
         <Reveal delay={600}>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <a
-              href="#contact"
+              href="/services"
               className="w-full md:w-auto px-8 py-4 bg-vortex-accent text-black font-bold rounded hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all duration-300 transform hover:-translate-y-1"
             >
               Iniciar Projeto _&gt;

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState, useRef } from 'react';
 import { Search, Cpu, Terminal, Zap } from 'lucide-react';
 import { WORKFLOW_STEPS } from '../constants';

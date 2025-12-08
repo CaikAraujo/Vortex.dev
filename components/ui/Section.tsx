@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useEffect, useState, ReactNode } from 'react';
 
 interface SectionProps {
@@ -36,9 +38,8 @@ export const Reveal: React.FC<SectionProps> = ({ children, className = '', id, d
       ref={ref}
       id={id}
       style={delayStyle}
-      className={`transition-all duration-1000 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
-      } ${className}`}
+      className={`transition-all duration-1000 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+        } ${className}`}
     >
       {children}
     </div>

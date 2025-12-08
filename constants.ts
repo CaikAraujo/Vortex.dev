@@ -107,6 +107,14 @@ export const TESTIMONIALS: Testimonial[] = [
     content: 'Impressionante a velocidade de entrega e a robustez da solução. O redesign da nossa plataforma foi um divisor de águas.',
     image: 'https://picsum.photos/100/100?random=3',
   },
+  {
+    id: '4',
+    name: 'Ana Silva',
+    role: 'CEO',
+    company: 'StartUp One',
+    content: 'Profissionalismo e competência técnica ímpares. A plataforma escalou suavemente para milhares de usuários.',
+    image: 'https://picsum.photos/100/100?random=4',
+  },
 ];
 
 export const PROJECTS: Project[] = [
@@ -115,18 +123,6 @@ export const PROJECTS: Project[] = [
     title: 'Neon Bank App',
     category: 'Fintech',
     image: 'https://picsum.photos/600/400?random=10'
-  },
-  {
-    id: '2',
-    title: 'Alpha Architecture',
-    category: 'Web Design',
-    image: 'https://picsum.photos/600/400?random=11'
-  },
-  {
-    id: '3',
-    title: 'Eco Future',
-    category: 'Branding',
-    image: 'https://picsum.photos/600/400?random=12'
   }
 ];
 

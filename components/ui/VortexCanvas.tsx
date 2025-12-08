@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef } from 'react';
 
 export const VortexCanvas: React.FC = () => {
@@ -24,9 +26,9 @@ export const VortexCanvas: React.FC = () => {
     setSize();
     window.addEventListener('resize', setSize);
 
-    const particleCount = 100; 
+    const particleCount = 100;
     const particles: Star[] = [];
-    
+
     // Cores mais sutis
     const colors = ['#ffffff', '#A1E6EA', '#00F0FF'];
 
@@ -37,7 +39,7 @@ export const VortexCanvas: React.FC = () => {
       radius: number;
       color: string;
       alpha: number;
-      
+
       constructor() {
         this.speed = 0;
         this.radius = 0;
@@ -49,46 +51,46 @@ export const VortexCanvas: React.FC = () => {
       reset(initial = false) {
         this.x = Math.random() * width;
         this.y = initial ? Math.random() * height : -10;
-        
+
         // Profundidade (Z)
-        const z = Math.random(); 
-        
+        const z = Math.random();
+
         // VELOCIDADE REDUZIDA:
         // Antes era (z * 12) + 2. Agora é muito mais lento e suave.
-        this.speed = (z * 0.8) + 0.2; 
-        
+        this.speed = (z * 0.8) + 0.2;
+
         this.radius = (z * 1.2) + 0.3;
-        
+
         // Opacidade baseada na profundidade
         this.alpha = (z * 0.5) + 0.3;
-        
+
         this.color = colors[Math.floor(Math.random() * colors.length)];
       }
 
       update() {
         this.y += this.speed;
-        
+
         // Reiniciar suavemente ao sair da tela
         if (this.y > height) {
-            this.reset();
+          this.reset();
         }
       }
 
       draw() {
         if (!ctx) return;
-        
+
         ctx.save();
         ctx.beginPath();
         ctx.globalAlpha = this.alpha;
         ctx.fillStyle = this.color;
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        
+
         // Glow suave apenas nas partículas maiores
         if (this.radius > 1) {
-            ctx.shadowBlur = 4;
-            ctx.shadowColor = this.color;
+          ctx.shadowBlur = 4;
+          ctx.shadowColor = this.color;
         }
-        
+
         ctx.fill();
         ctx.closePath();
         ctx.restore();
@@ -123,8 +125,8 @@ export const VortexCanvas: React.FC = () => {
   }, []);
 
   return (
-    <canvas 
-      ref={canvasRef} 
+    <canvas
+      ref={canvasRef}
       className="absolute inset-0 w-full h-full pointer-events-none"
     />
   );
