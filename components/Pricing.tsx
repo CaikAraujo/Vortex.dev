@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 import { Check, Sparkles, Zap } from 'lucide-react';
 import { PRICING } from '../constants';
 import { Reveal } from './ui/Section';
+import { useModal } from '../src/context/ModalContext';
 
 export const Pricing: React.FC = () => {
   const [hoveredPlan, setHoveredPlan] = useState<string | null>(null);
+  const { openModal } = useModal();
 
   return (
     <section id="pricing" className="py-32 bg-vortex-black border-y border-white/5 relative overflow-hidden">
@@ -16,10 +18,10 @@ export const Pricing: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <Reveal className="text-center mb-24">
           <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-6">
-            Investimento <span className="text-vortex-accent">.</span>
+            Investissement <span className="text-vortex-accent">.</span>
           </h2>
           <p className="text-vortex-muted text-lg max-w-2xl mx-auto font-light">
-            Transparência total. Escolha a arquitetura ideal para o estágio atual do seu negócio.
+            Transparence totale. Choisissez l'architecture idéale pour le stade actuel de votre entreprise.
           </p>
         </Reveal>
 
@@ -47,7 +49,7 @@ export const Pricing: React.FC = () => {
                   {isHighlighted && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-vortex-accent text-black px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-[0_0_20px_rgba(0,240,255,0.4)]">
                       <Sparkles className="w-3 h-3 fill-current" />
-                      Recommended
+                      Recommandé
                     </div>
                   )}
 
@@ -59,9 +61,9 @@ export const Pricing: React.FC = () => {
                     </h3>
 
                     <div className="flex items-baseline gap-1">
-                      <span className="text-vortex-muted text-lg font-light">R$</span>
+                      <span className="text-vortex-muted text-lg font-light">CHF</span>
                       <span className={`text-5xl md:text-6xl font-bold font-display tracking-tight ${isHighlighted ? 'text-white' : 'text-white/80'}`}>
-                        {tier.price.replace('R$ ', '')}
+                        {tier.price.replace('CHF ', '')}
                       </span>
                     </div>
                     <p className="text-vortex-muted text-sm mt-4 leading-relaxed">{tier.description}</p>
@@ -89,6 +91,7 @@ export const Pricing: React.FC = () => {
 
                   {/* CTA Button */}
                   <button
+                    onClick={() => openModal(`Plano: ${tier.name}`)}
                     aria-label={`Select ${tier.name} Plan`}
                     className={`
                       w-full py-5 rounded-lg font-bold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 group
@@ -98,7 +101,7 @@ export const Pricing: React.FC = () => {
                       }
                     `}
                   >
-                    Select Plan
+                    Choisir ce Plan
                     <span className="group-hover:translate-x-1 transition-transform">_&gt;</span>
                   </button>
                 </div>
@@ -111,7 +114,7 @@ export const Pricing: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
             <Zap className="w-4 h-4 text-vortex-accent" />
             <p className="text-vortex-muted text-sm">
-              Enterprise? <a href="#contact" className="text-white font-bold hover:text-vortex-accent transition-colors border-b border-transparent hover:border-vortex-accent ml-1">Fale com nossos engenheiros</a> para uma solução customizada.
+              Entreprise ? <a href="#contact" className="text-white font-bold hover:text-vortex-accent transition-colors border-b border-transparent hover:border-vortex-accent ml-1">Contactez nos ingénieurs</a> pour une solution personnalisée.
             </p>
           </div>
         </Reveal>

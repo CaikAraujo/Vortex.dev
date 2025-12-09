@@ -23,13 +23,13 @@ export const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-vortex-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-vortex-accent"></span>
             </span>
-            System Online
+            Système En Ligne
           </div>
         </Reveal>
 
         <Reveal delay={200}>
           <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-9xl tracking-tighter text-white mb-8 leading-[0.9]">
-            ENTER THE <br />
+            ENTREZ DANS LE <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-vortex-accent via-white to-vortex-accent animate-pulse bg-300% bg-left">
               VORTEX
             </span>
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
 
         <Reveal delay={400}>
           <p className="max-w-2xl mx-auto text-vortex-muted text-lg md:text-xl mb-12 leading-relaxed font-light backdrop-blur-sm p-4 rounded-lg bg-black/20 border border-white/5">
-            Aceleramos a evolução digital da sua empresa. Engenharia de software complexa simplificada em experiências digitais imersivas.
+            Nous accélérons l'évolution numérique de votre entreprise. Une ingénierie logicielle complexe simplifiée en expériences numériques immersives.
           </p>
         </Reveal>
 
@@ -48,13 +48,13 @@ export const Hero: React.FC = () => {
               href="/services"
               className="w-full md:w-auto px-8 py-4 bg-vortex-accent text-black font-bold rounded hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all duration-300 transform hover:-translate-y-1"
             >
-              Iniciar Projeto _&gt;
+              Démarrer un Projet _&gt;
             </a>
             <a
               href="#projects"
               className="w-full md:w-auto px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium rounded hover:border-vortex-accent hover:text-vortex-accent transition-colors duration-300"
             >
-              Ver Portfolio
+              Voir le Portfolio
             </a>
           </div>
         </Reveal>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
 import { Reveal } from './ui/Section';
+import { useModal } from '../src/context/ModalContext';
 
 export interface PricingTier {
     name: string;
@@ -33,6 +34,7 @@ const themeStyles: Record<string, { bg: string; text: string; button: string; bo
 
 export const ServicePricingSection: React.FC<ServicePricingSectionProps> = ({ title, subtitle, category, tiers, colorTheme = 'vortex' }) => {
     const styles = themeStyles[colorTheme] || themeStyles.vortex;
+    const { openModal } = useModal();
 
     return (
         <section className="py-24 relative border-t border-white/5">
@@ -81,7 +83,10 @@ export const ServicePricingSection: React.FC<ServicePricingSectionProps> = ({ ti
                                     ))}
                                 </ul>
 
-                                <button className={`w-full py-4 rounded-lg font-bold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 group/btn cursor-pointer ${tier.highlight ? styles.button + ' text-white' : 'bg-white/5 text-white hover:bg-white/10'}`}>
+                                <button
+                                    onClick={() => openModal(`Plano: ${tier.name}`)}
+                                    className={`w-full py-4 rounded-lg font-bold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 group/btn cursor-pointer ${tier.highlight ? styles.button + ' text-white' : 'bg-white/5 text-white hover:bg-white/10'}`}
+                                >
                                     {tier.buttonText}
                                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                                 </button>

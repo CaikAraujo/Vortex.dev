@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+import { WhatsAppButton } from '../../components/WhatsAppButton';
+import { ModalProvider } from '../context/ModalContext';
+
 export const metadata: Metadata = {
     title: 'VORTEX.DEV | Agência Digital',
     description: 'Transformamos código em resultados.',
@@ -21,7 +24,12 @@ export default function RootLayout({
                     rel="stylesheet"
                 />
             </head>
-            <body>{children}</body>
+            <body>
+                <ModalProvider>
+                    {children}
+                    <WhatsAppButton />
+                </ModalProvider>
+            </body>
         </html>
     );
 }

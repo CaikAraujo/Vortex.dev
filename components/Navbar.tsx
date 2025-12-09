@@ -36,13 +36,13 @@ export const Navbar: React.FC = () => {
             href="/"
             className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
           >
-            Home
+            Accueil
           </a>
           <a
             href="/services"
             className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
           >
-            Serviços
+            Services
           </a>
           <a
             href="/templates"
@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
             href="/services"
             className="bg-white text-black px-5 py-2.5 text-sm font-bold rounded hover:bg-vortex-accent hover:scale-105 transition-all flex items-center gap-2 group"
           >
-            Iniciar Projeto
+            Démarrer un Projet
             <span className="group-hover:translate-x-1 transition-transform" aria-hidden="true">_&gt;</span>
           </a>
         </div>
@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
             className="bg-vortex-accent text-black text-center py-3 rounded font-bold uppercase tracking-wider"
             onClick={() => setIsOpen(false)}
           >
-            Iniciar Projeto
+            Démarrer un Projet
           </a>
         </div>
       )}

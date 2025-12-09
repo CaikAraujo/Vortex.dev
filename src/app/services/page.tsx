@@ -8,134 +8,134 @@ import { Reveal } from '../../../components/ui/Section';
 const webDevTiers: PricingTier[] = [
     {
         name: 'Site Vitrine',
-        description: 'Perfeito para apresentar sua atividade online.',
-        price: 'R$ 3.500',
-        features: ['Design responsivo sob medida', 'Até 5 páginas', 'Otimização SEO básica', 'Formulário de contato', 'Hospedagem 1 ano inclusa', 'Suporte 3 meses'],
-        buttonText: 'Escolher este Plano',
+        description: 'Parfait pour présenter votre activité en ligne.',
+        price: 'CHF 2.490',
+        features: ['Design réactif sur mesure', 'Jusqu\'à 5 pages', 'Optimisation SEO de base', 'Formulaire de contact', 'Hébergement 1 an inclus', 'Support 3 mois'],
+        buttonText: 'Choisir ce Plan',
     },
     {
         name: 'Site Business',
-        description: 'Solução completa para desenvolver seu negócio.',
-        price: 'R$ 6.000',
-        features: ['Design premium personalizado', 'Até 10 páginas', 'SEO avançado + Blog', 'Sistema de agendamento', 'Integrações (CRM, Email)', 'Analytics avançados', 'Suporte 6 meses'],
-        buttonText: 'Escolher este Plano',
+        description: 'Solution complète pour développer votre entreprise.',
+        price: 'CHF 3.990',
+        features: ['Design premium personnalisé', 'Jusqu\'à 10 pages', 'SEO avancé + Blog', 'Système de réservation', 'Intégrations (CRM, Email)', 'Analyses avancées', 'Support 6 mois'],
+        buttonText: 'Choisir ce Plan',
         highlight: true,
     },
     {
         name: 'E-commerce',
-        description: 'Loja virtual completa com vendas integradas.',
-        price: 'R$ 9.000',
-        features: ['Design e-commerce exclusivo', 'Produtos ilimitados', 'Pagamento seguro (Stripe/Pix)', 'Gestão de estoque', 'Painel administrativo', 'SEO para e-commerce', 'Suporte 12 meses'],
-        buttonText: 'Iniciar Loja',
+        description: 'Boutique en ligne complète avec ventes intégrées.',
+        price: 'CHF 5.990',
+        features: ['Design e-commerce exclusif', 'Produits illimités', 'Paiement sécurisé (Stripe/TWINT)', 'Gestion des stocks', 'Panneau d\'administration', 'SEO pour e-commerce', 'Support 12 mois'],
+        buttonText: 'Lancer ma Boutique',
     },
 ];
 
 const seoTiers: PricingTier[] = [
     {
-        name: 'SEO Essencial',
-        description: 'Ideal para iniciar seu ranqueamento.',
-        price: 'R$ 1.200',
-        period: '/mês',
-        features: ['Auditoria SEO inicial', 'Otimização técnica básica', '5 palavras-chave foco', 'Relatório mensal', 'Suporte via email'],
-        buttonText: 'Escolher Plano',
+        name: 'SEO Essentiel',
+        description: 'Idéal pour commencer votre référencement.',
+        price: 'CHF 790',
+        period: '/mois',
+        features: ['Audit SEO initial', 'Optimisation technique de base', '5 mots-clés cibles', 'Rapport mensuel', 'Support par email'],
+        buttonText: 'Choisir ce Plan',
     },
     {
-        name: 'SEO Avançado',
-        description: 'Estratégia completa de crescimento orgânico.',
-        price: 'R$ 2.500',
-        period: '/mês',
-        features: ['Auditoria SEO completa', 'Otimização técnica avançada', '15 palavras-chave foco', 'Criação de conteúdo (2 posts/mês)', 'Link building básico', 'Relatório detalhado'],
-        buttonText: 'Escolher Plano',
+        name: 'SEO Avancé',
+        description: 'Stratégie complète de croissance organique.',
+        price: 'CHF 1.390',
+        period: '/mois',
+        features: ['Audit SEO complet', 'Optimisation technique avancée', '15 mots-clés cibles', 'Création de contenu (2 articles/mois)', 'Netlinking de base', 'Rapport détaillé'],
+        buttonText: 'Choisir ce Plan',
         highlight: true,
     },
     {
         name: 'SEO Premium',
-        description: 'Para empresas com grandes ambições.',
-        price: 'R$ 4.500',
-        period: '/mês',
-        features: ['Estratégia SEO 360º', 'Palavras-chave ilimitadas', 'Conteúdo premium (4 posts/mês)', 'Link building avançado', 'Análise de concorrentes', 'Consultor dedicado', 'Suporte prioritário'],
-        buttonText: 'Escolher Plano',
+        description: 'Pour les entreprises aux grandes ambitions.',
+        price: 'CHF 2.490',
+        period: '/mois',
+        features: ['Stratégie SEO 360º', 'Mots-clés illimités', 'Contenu premium (4 articles/mois)', 'Netlinking avancé', 'Analyse des concurrents', 'Consultant dédié', 'Support prioritaire'],
+        buttonText: 'Choisir ce Plan',
     },
 ];
 
 const adsTiers: PricingTier[] = [
     {
-        name: 'Google Ads Essencial',
-        description: 'Ideal para começar no tráfego pago.',
-        price: 'R$ 1.500',
-        period: '/mês',
-        features: ['Configuração de conta', 'Campanha Search (3 grupos)', 'Geolocalização precisa', 'Relatório mensal', 'Suporte por email'],
-        buttonText: 'Iniciar Campanha',
+        name: 'Google Ads Essentiel',
+        description: 'Idéal pour débuter avec le trafic payant.',
+        price: 'CHF 590',
+        period: '/mois',
+        features: ['Configuration du compte', 'Campagne Search (3 groupes)', 'Géolocalisation précise', 'Rapport mensuel', 'Support par email'],
+        buttonText: 'Lancer une Campagne',
     },
     {
-        name: 'Google Ads Avançado',
-        description: 'Estratégia completa de crescimento.',
-        price: 'R$ 3.000',
-        period: '/mês',
-        features: ['Gestão completa de campanhas', 'Search + Display', 'Remarketing dinâmico', 'Otimização semanal', 'Relatório quinzenal', 'Consultor dedicado'],
-        buttonText: 'Escolher Plano',
+        name: 'Google Ads Avancé',
+        description: 'Stratégie complète de croissance.',
+        price: 'CHF 1.190',
+        period: '/mois',
+        features: ['Gestion complète des campagnes', 'Search + Display', 'Remarketing dynamique', 'Optimisation hebdomadaire', 'Rapport bimensuel', 'Consultant dédié'],
+        buttonText: 'Choisir ce Plan',
         highlight: true,
     },
     {
         name: 'Google Ads Premium',
-        description: 'Solução corporativa para alta escala.',
-        price: 'R$ 6.000',
-        period: '/mês',
-        features: ['Estratégia multi-canal', 'Shopping + Vídeo (YouTube)', 'Otimização com IA', 'Testes A/B contínuos', 'Dashboard personalizado', 'Suporte 24/7'],
-        buttonText: 'Fale Conosco',
+        description: 'Solution d\'entreprise pour grande échelle.',
+        price: 'CHF 2.190',
+        period: '/mois',
+        features: ['Stratégie multi-canal', 'Shopping + Vidéo (YouTube)', 'Optimisation IA', 'Tests A/B continus', 'Tableau de bord personnalisé', 'Support 24/7'],
+        buttonText: 'Contactez-nous',
     },
 ];
 
 const performanceTiers: PricingTier[] = [
     {
-        name: 'Otimização Base',
-        description: 'Melhore a velocidade essencial do site.',
-        price: 'R$ 1.200',
-        features: ['Auditoria de performance', 'Otimização de imagens', 'Cache de navegador', 'Minificação CSS/JS', 'Relatório antes/depois'],
-        buttonText: 'Otimizar Agora',
+        name: 'Optimisation de Base',
+        description: 'Améliorez la vitesse essentielle du site.',
+        price: 'CHF 790',
+        features: ['Audit de performance', 'Optimisation des images', 'Cache navigateur', 'Minification CSS/JS', 'Rapport avant/après'],
+        buttonText: 'Optimiser Maintenant',
     },
     {
-        name: 'Otimização Avançada',
-        description: 'Performance máxima (Core Web Vitals).',
-        price: 'R$ 2.800',
-        features: ['Auditoria completa', 'Otimização de imagens (WebP)', 'Cache avançado (Redis/Varnish)', 'Configuração de CDN', 'Lazy loading inteligente', 'Garantia de pontuação verde'],
-        buttonText: 'Otimizar Agora',
+        name: 'Optimisation Avancée',
+        description: 'Performance maximale (Core Web Vitals).',
+        price: 'CHF 1.490',
+        features: ['Audit complet', 'Optimisation des images (WebP)', 'Cache avancé (Redis/Varnish)', 'Configuration CDN', 'Lazy loading intelligent', 'Garantie de score vert'],
+        buttonText: 'Optimiser Maintenant',
         highlight: true,
     },
     {
-        name: 'Otimização Premium',
-        description: 'Solução definitiva de velocidade.',
-        price: 'R$ 5.000',
-        features: ['Análise de arquitetura', 'Refatoração de código crítico', 'CDN Enterprise', 'Monitoramento RUM', 'Consultoria técnica', 'Treinamento para equipe'],
-        buttonText: 'Fale Conosco',
+        name: 'Optimisation Premium',
+        description: 'Solution définitive de vitesse.',
+        price: 'CHF 2.490',
+        features: ['Analyse d\'architecture', 'Refactorisation de code critique', 'CDN Enterprise', 'Monitoring RUM', 'Conseil technique', 'Formation équipe'],
+        buttonText: 'Contactez-nous',
     },
 ];
 
 const maintenanceTiers: PricingTier[] = [
     {
-        name: 'Básico',
-        description: 'Manutenção essencial para segurança.',
-        price: 'R$ 300',
-        period: '/mês',
-        features: ['Atualizações de plugins/core', 'Backup semanal', 'Monitoramento 24/7', 'Suporte por email'],
-        buttonText: 'Assinar',
+        name: 'Basique',
+        description: 'Maintenance essentielle pour la sécurité.',
+        price: 'CHF 99',
+        period: '/mois',
+        features: ['Mises à jour plugins/core', 'Sauvegarde hebdomadaire', 'Monitoring 24/7', 'Support par email'],
+        buttonText: 'Souscrire',
     },
     {
         name: 'Pro',
-        description: 'Segurança e performance garantidas.',
-        price: 'R$ 700',
-        period: '/mês',
-        features: ['Atualizações prioritárias', 'Backup diário', 'Monitoramento avançado', 'Horas de desenvolvimento (2h)', 'Otimização de performance', 'Suporte prioritário'],
-        buttonText: 'Assinar',
+        description: 'Sécurité et performance garanties.',
+        price: 'CHF 229',
+        period: '/mois',
+        features: ['Mises à jour prioritaires', 'Sauvegarde quotidienne', 'Monitoring avancé', 'Heures de développement (2h)', 'Optimisation de performance', 'Support prioritaire'],
+        buttonText: 'Souscrire',
         highlight: true,
     },
     {
         name: 'Enterprise',
-        description: 'Gestão completa do seu ambiente digital.',
-        price: 'Sob Consulta',
-        period: '/mês',
-        features: ['Atualizações em tempo real', 'Backups em múltiplos locais', 'Monitoramento de segurança proativo', 'Desenvolvimento contínuo', 'SLA Garantido', 'Gerente de contas'],
-        buttonText: 'Fale Conosco',
+        description: 'Gestion complète de votre environnement numérique.',
+        price: 'Sur Devis',
+        period: '/mois',
+        features: ['Mises à jour en temps réel', 'Sauvegardes multi-sites', 'Monitoring de sécurité proactif', 'Développement continu', 'SLA Garanti', 'Gestionnaire de compte'],
+        buttonText: 'Contactez-nous',
     },
 ];
 
@@ -150,52 +150,52 @@ export default function ServicesPage() {
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <Reveal>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
-                            Nossos <span className="text-vortex-accent">Serviços</span>
+                            Nos <span className="text-vortex-accent">Services</span>
                         </h1>
                         <p className="text-xl text-vortex-muted max-w-2xl mx-auto font-light leading-relaxed">
-                            Soluções completas para escalar sua presença digital.
-                            Escolha o pacote ideal para o seu momento.
+                            Solutions complètes pour développer votre présence numérique.
+                            Choisissez le forfait idéal pour votre étape actuelle.
                         </p>
                     </Reveal>
                 </div>
             </section>
 
             <ServicePricingSection
-                category="Desenvolvimento"
-                title="Criação de Sites & Apps"
-                subtitle="Escolha a solução que corresponde às suas necessidades e orçamento."
+                category="Développement"
+                title="Création de Sites & Apps"
+                subtitle="Choisissez la solution qui correspond à vos besoins et à votre budget."
                 tiers={webDevTiers}
                 colorTheme="vortex"
             />
 
             <ServicePricingSection
-                category="Visibilidade"
-                title="Otimização SEO"
-                subtitle="Aumente sua visibilidade no Google com nossas estratégias de busca."
+                category="Visibilité"
+                title="Optimisation SEO"
+                subtitle="Augmentez votre visibilité sur Google avec nos stratégies de recherche."
                 tiers={seoTiers}
                 colorTheme="green"
             />
 
             <ServicePricingSection
-                category="Tráfego Pago"
+                category="Trafic Payant"
                 title="Google Ads & Performance"
-                subtitle="Gere mais leads e vendas com campanhas otimizadas."
+                subtitle="Générez plus de leads et de ventes avec des campagnes optimisées."
                 tiers={adsTiers}
                 colorTheme="orange"
             />
 
             <ServicePricingSection
-                category="Velocidade"
-                title="Otimização de Performance"
-                subtitle="Acelere seu site para uma melhor experiência do usuário e SEO."
+                category="Vitesse"
+                title="Optimisation de Performance"
+                subtitle="Accélérez votre site pour une meilleure expérience utilisateur et un meilleur SEO."
                 tiers={performanceTiers}
                 colorTheme="blue"
             />
 
             <ServicePricingSection
-                category="Suporte"
-                title="Manutenção & Segurança"
-                subtitle="Mantenha seu site sempre atualizado, seguro e rápido."
+                category="Support"
+                title="Maintenance & Sécurité"
+                subtitle="Gardez votre site toujours à jour, sécurisé et rapide."
                 tiers={maintenanceTiers}
                 colorTheme="purple"
             />

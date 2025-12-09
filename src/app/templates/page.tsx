@@ -7,31 +7,37 @@ import { Reveal } from '../../../components/ui/Section';
 
 const MOCK_TEMPLATES: TemplateProduct[] = [
     {
-        id: 'cyber-agency',
-        name: 'Cyber Agency V1',
+        id: 'aether',
+        name: 'Aether',
         category: 'Portfolio',
-        price: 'R$ 890',
-        description: 'Um portfólio futurista para agências e freelancers criativos. Inclui animações avançadas e seção de cases.',
+        price: 'CHF 1.290',
+        description: 'Un portfolio numérique premium pour agences et créatifs. Mettez en valeur vos projets avec élégance et technologie.',
         imageGradient: 'bg-gradient-to-br from-purple-600 to-blue-900',
-        features: ['Next.js 14 + Tailwind', 'Animações Framer Motion', 'Modo Dark Nativo', 'Blog Integrado', 'SEO Otimizado']
+        image: '/images/templates/aether.png',
+        demoUrl: 'https://aether-beryl.vercel.app/',
+        features: ['Next.js 14 + Tailwind', 'Animations Fluides', 'Galerie de Projets', 'Blog Intégré', 'SEO Optimisé']
     },
     {
-        id: 'neon-saas',
-        name: 'Neon SaaS Dashboard',
+        id: 'nexus',
+        name: 'Nexus',
         category: 'Landing Page',
-        price: 'R$ 1.200',
-        description: 'Landing page de alta conversão para produtos SaaS. Seções de pricing, features e depoimentos otimizadas.',
+        price: 'CHF 1.890',
+        description: 'Landing page à haute conversion pour startups et produits numériques. Design moderne axé sur la capture de leads.',
         imageGradient: 'bg-gradient-to-br from-cyan-500 to-emerald-900',
-        features: ['Design System Completo', 'Integração Stripe Pronta', 'Componentes Acessíveis', 'Performance 100/100', 'Suporte Multi-idioma']
+        image: '/images/templates/nexus.png',
+        demoUrl: 'https://nexus-six-pi.vercel.app/',
+        features: ['Design System Moderne', 'Sections Optimisées', 'Composants Modulaires', 'Performance Maximale', 'Support Multi-langue']
     },
     {
-        id: 'dark-commerce',
-        name: 'Vortex Store',
-        category: 'E-commerce',
-        price: 'R$ 1.500',
-        description: 'Template de loja virtual minimalista e luxuoso. Foco total nos produtos com UX de ponta.',
+        id: 'meridian',
+        name: 'Meridian',
+        category: 'Institutionnel',
+        price: 'CHF 2.490',
+        description: 'Solution d\'entreprise robuste pour entreprises et institutions financières. Transmettez confiance et autorité.',
         imageGradient: 'bg-gradient-to-br from-neutral-800 to-black',
-        features: ['Carrinho Inteligente', 'Checkout Otimizado', 'Filtros Avançados', 'Mobile First', 'Painel de Admin']
+        image: '/images/templates/meridian.png',
+        demoUrl: 'https://meridian-gold.vercel.app/',
+        features: ['Mise en page Exécutive', 'Présentation des Services', 'Pages Corporatives', 'Mobile First', 'Panneau Administratif']
     }
 ];
 
@@ -46,14 +52,14 @@ export default function TemplatesPage() {
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <Reveal>
                         <span className="inline-block px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6">
-                            Loja de Códigos
+                            Boutique de Code
                         </span>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
                             Templates <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Premium</span>
                         </h1>
                         <p className="text-xl text-vortex-muted max-w-2xl mx-auto font-light leading-relaxed">
-                            Acelere seu desenvolvimento com nossas bases de código prontas.
-                            Qualidade de agência, preço de template.
+                            Choisissez votre base et nous personnalisons tout pour votre marque.
+                            La valeur inclut déjà le code et les adaptations dont vous avez besoin.
                         </p>
                     </Reveal>
                 </div>
@@ -72,13 +78,13 @@ export default function TemplatesPage() {
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <Reveal>
                         <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-                            Precisa de algo <span className="text-vortex-accent">Exclusivo?</span>
+                            Besoin de quelque chose d'<span className="text-vortex-accent">Exclusif ?</span>
                         </h2>
                         <p className="text-vortex-muted text-lg mb-8 max-w-2xl mx-auto">
-                            Se os templates não atendem 100% da sua visão, nossa equipe pode criar um design sob medida para sua marca.
+                            Si les modèles ne correspondent pas à 100% à votre vision, notre équipe peut créer un design sur mesure pour votre marque.
                         </p>
                         <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-vortex-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
-                            Falar com Especialistas
+                            Parler à des Experts
                         </a>
                     </Reveal>
                 </div>

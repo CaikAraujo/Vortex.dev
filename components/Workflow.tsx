@@ -106,10 +106,10 @@ export const Workflow: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <Reveal className="mb-24 text-center">
                     <span className="text-vortex-accent font-mono text-sm tracking-[0.2em] uppercase block mb-4">
-                        Processo
+                        Processus
                     </span>
                     <h2 className="font-display text-4xl md:text-6xl font-bold text-white">
-                        Workflow <span className="text-vortex-accent">Vortex.</span>
+                        Processus <span className="text-vortex-accent">Vortex.</span>
                     </h2>
                 </Reveal>
 

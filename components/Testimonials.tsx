@@ -16,7 +16,7 @@ export const Testimonials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <Reveal className="mb-20">
           <h2 className="font-display text-4xl md:text-6xl font-bold text-white text-right">
-            Client <br /> <span className="text-vortex-accent">Feedback.</span>
+            Avis <br /> <span className="text-vortex-accent">Clients.</span>
           </h2>
         </Reveal>
 

@@ -50,7 +50,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
           </div>
 
           <div className="mt-8 pt-8 border-t border-white/5 flex items-center gap-2 text-sm font-bold text-vortex-muted uppercase tracking-wider group-hover:text-vortex-accent transition-colors duration-300">
-            Saiba mais
+            En savoir plus
             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300" />
           </div>
         </div>
@@ -74,7 +74,7 @@ export const Services: React.FC = () => {
             <div className="space-y-2">
               <span className="text-vortex-accent font-mono text-xs tracking-widest uppercase flex items-center gap-2">
                 <span className="w-2 h-2 bg-vortex-accent rounded-full animate-pulse"></span>
-                System Capabilities
+                Capacités du Système
               </span>
               <h2 className="font-display text-4xl md:text-6xl font-bold text-white tracking-tight">
                 Tech <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Stack</span>
@@ -83,7 +83,7 @@ export const Services: React.FC = () => {
           </Reveal>
           <Reveal delay={200}>
             <p className="text-vortex-muted max-w-md text-right md:text-left text-lg font-light leading-relaxed">
-              Arquitetura de software de alta performance. Construímos o motor que impulsiona o seu negócio digital.
+              Architecture logicielle haute performance. Nous construisons le moteur qui propulse votre entreprise numérique.
             </p>
           </Reveal>
         </div>
