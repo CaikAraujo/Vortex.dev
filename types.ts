@@ -41,3 +41,37 @@ export interface WorkflowStep {
   description: string;
   icon: 'search' | 'cpu' | 'terminal' | 'zap';
 }
+
+export interface WhyChooseUsItem {
+  id: string;
+  title: string;
+  description: string;
+  icon: 'shield' | 'rocket' | 'globe' | 'clock';
+}
+
+export enum ProjectType {
+  WEB_APP = 'Application Web / SaaS',
+  WEBSITE = 'Site Institutionnel',
+  LANDING_PAGE = 'Landing Page',
+  ECOMMERCE = 'E-commerce',
+  OTHER = 'Autre'
+}
+
+export enum BudgetRange {
+  LOW = 'CHF 1.000 - 3.000',
+  MID = 'CHF 3.000 - 8.000',
+  HIGH = 'CHF 8.000 - 15.000',
+  ENTERPRISE = 'CHF 15.000+',
+  UNDECIDED = 'À définir'
+}
+
+export interface ClientData {
+  name: string;
+  email: string;
+  company?: string;
+  projectType: ProjectType;
+  budget?: BudgetRange;
+  deadline?: string;
+  description: string;
+  timestamp: string;
+}

@@ -94,7 +94,7 @@ export const Pricing: React.FC = () => {
                     onClick={() => openModal(`Plano: ${tier.name}`)}
                     aria-label={`Select ${tier.name} Plan`}
                     className={`
-                      w-full py-5 rounded-lg font-bold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 group
+                      w-full py-5 rounded-lg font-bold text-sm tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer
                       ${isHighlighted
                         ? 'bg-vortex-accent text-black hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]'
                         : 'bg-white/5 text-white hover:bg-white hover:text-black border border-white/5 hover:border-white'

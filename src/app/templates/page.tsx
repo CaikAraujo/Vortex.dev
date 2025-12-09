@@ -77,8 +77,8 @@ export default function TemplatesPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.05] pointer-events-none"></div>
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <Reveal>
-                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-                            Besoin de quelque chose d'<span className="text-vortex-accent">Exclusif ?</span>
+                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 whitespace-nowrap">
+                            Besoin de quelque chose <span className="text-vortex-accent">d'Exclusif ?</span>
                         </h2>
                         <p className="text-vortex-muted text-lg mb-8 max-w-2xl mx-auto">
                             Si les modèles ne correspondent pas à 100% à votre vision, notre équipe peut créer un design sur mesure pour votre marque.

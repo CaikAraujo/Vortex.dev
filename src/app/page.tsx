@@ -1,5 +1,6 @@
 import { Navbar } from '../../components/Navbar';
 import { Hero } from '../../components/Hero';
+import { WhyChooseUs } from '../../components/WhyChooseUs';
 import { Services } from '../../components/Services';
 import { Pricing } from '../../components/Pricing';
 import { Testimonials } from '../../components/Testimonials';
@@ -12,10 +13,9 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
-                <Services />
-                <Workflow />
                 <Pricing />
                 <Testimonials />
+                <WhyChooseUs />
                 <Contact />
             </main>
         </div>

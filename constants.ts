@@ -1,4 +1,4 @@
-import { ServiceItem, PricingTier, Testimonial, Project, WorkflowStep } from './types';
+import { ServiceItem, PricingTier, Testimonial, Project, WorkflowStep, WhyChooseUsItem } from './types';
 
 export const NAV_LINKS = [
   { label: 'Expertise', href: '#services' },
@@ -150,5 +150,32 @@ export const WORKFLOW_STEPS: WorkflowStep[] = [
     title: 'Optimisation',
     description: 'Suivi de la performance, SEO technique et ajustements pour une conversion maximale.',
     icon: 'zap',
+  },
+];
+
+export const WHY_CHOOSE_US: WhyChooseUsItem[] = [
+  {
+    id: '1',
+    title: 'Expertise Suisse',
+    description: 'Basés à Genève, nous comprenons les exigences de qualité et de précision du marché suisse.',
+    icon: 'shield',
+  },
+  {
+    id: '2',
+    title: 'Design Futuriste',
+    description: 'Nous créons des interfaces qui ne ressemblent à rien de ce que vos concurrents possèdent.',
+    icon: 'rocket',
+  },
+  {
+    id: '3',
+    title: 'Performance Absolue',
+    description: 'Sites ultra-rapides optimisés pour le référencement (SEO) et la conversion instantanée.',
+    icon: 'clock',
+  },
+  {
+    id: '4',
+    title: 'Support Dédié',
+    description: 'Une équipe réactive qui parle votre langue et vous accompagne à chaque étape.',
+    icon: 'globe',
   },
 ];
