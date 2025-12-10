@@ -1,4 +1,4 @@
-'use client';
+
 
 import { Navbar } from '../../../components/Navbar';
 import { Contact } from '../../../components/Contact';
@@ -41,6 +41,17 @@ const MOCK_TEMPLATES: TemplateProduct[] = [
     }
 ];
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Templates Premium | VORTEX.DEV',
+    description: 'Accélérez votre lancement avec nos templates Next.js haute performance. Design suisse, code propre et optimisation SEO native.',
+    openGraph: {
+        title: 'Templates Premium Next.js | VORTEX.DEV',
+        description: 'Boutique de code pour startups et entreprises exigeantes.',
+    }
+};
+
 export default function TemplatesPage() {
     return (
         <div className="bg-vortex-black min-h-screen">
@@ -77,7 +88,7 @@ export default function TemplatesPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.05] pointer-events-none"></div>
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <Reveal>
-                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 whitespace-nowrap">
+                        <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
                             Besoin de quelque chose <span className="text-vortex-accent">d'Exclusif ?</span>
                         </h2>
                         <p className="text-vortex-muted text-lg mb-8 max-w-2xl mx-auto">

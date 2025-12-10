@@ -9,6 +9,17 @@ export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -23,6 +34,15 @@ export const Navbar: React.FC = () => {
         : 'bg-transparent py-6'
         }`}
     >
+      {/* Mobile Menu Backdrop */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm -z-10 md:hidden animate-fade-in"
+          aria-hidden="true"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="font-display font-bold text-2xl tracking-tighter text-white flex items-center gap-2" aria-label="VORTEX.DEV Home">
@@ -81,7 +101,31 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-vortex-dark border-b border-white/10 p-6 flex flex-col gap-6 animate-fade-in shadow-2xl">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-vortex-dark border-b border-white/10 p-6 flex flex-col gap-6 animate-fade-in shadow-2xl max-h-[80vh] overflow-y-auto">
+          {/* Static Links */}
+          <a
+            href="/"
+            className="text-lg font-medium text-white hover:text-vortex-accent"
+            onClick={() => setIsOpen(false)}
+          >
+            Accueil
+          </a>
+          <a
+            href="/services"
+            className="text-lg font-medium text-white hover:text-vortex-accent"
+            onClick={() => setIsOpen(false)}
+          >
+            Services
+          </a>
+          <a
+            href="/templates"
+            className="text-lg font-medium text-white hover:text-vortex-accent"
+            onClick={() => setIsOpen(false)}
+          >
+            Templates
+          </a>
+
+          {/* Dynamic Links */}
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}

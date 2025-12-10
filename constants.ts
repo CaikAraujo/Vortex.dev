@@ -1,9 +1,7 @@
 import { ServiceItem, PricingTier, Testimonial, Project, WorkflowStep, WhyChooseUsItem } from './types';
 
 export const NAV_LINKS = [
-  { label: 'Expertise', href: '#services' },
   { label: 'Projets', href: '#projects' },
-  { label: 'Tarifs', href: '#pricing' },
   { label: 'Avis', href: '#testimonials' },
 ];
 

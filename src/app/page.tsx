@@ -1,11 +1,18 @@
+import dynamic from 'next/dynamic';
 import { Navbar } from '../../components/Navbar';
 import { Hero } from '../../components/Hero';
-import { WhyChooseUs } from '../../components/WhyChooseUs';
-import { Services } from '../../components/Services';
-import { Pricing } from '../../components/Pricing';
-import { Testimonials } from '../../components/Testimonials';
-import { Contact } from '../../components/Contact';
-import { Workflow } from '../../components/Workflow';
+import { Metadata } from 'next';
+
+// Lazy load components below the fold for better initial load performance
+const Pricing = dynamic(() => import('../../components/Pricing').then(mod => mod.Pricing));
+const Testimonials = dynamic(() => import('../../components/Testimonials').then(mod => mod.Testimonials));
+const WhyChooseUs = dynamic(() => import('../../components/WhyChooseUs').then(mod => mod.WhyChooseUs));
+const Contact = dynamic(() => import('../../components/Contact').then(mod => mod.Contact));
+
+export const metadata: Metadata = {
+    title: 'Agence de Développement & Design Premium',
+    description: 'Agence de développement web premium en Suisse. Experts Next.js pour des sites ultra-rapides et des applications web sur mesure.',
+};
 
 export default function Home() {
     return (

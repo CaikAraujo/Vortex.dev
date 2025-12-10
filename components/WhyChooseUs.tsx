@@ -4,6 +4,65 @@ import React from 'react';
 import { Shield, Zap, UserCheck, Check, X, ArrowRight } from 'lucide-react';
 import { Reveal } from './ui/Section';
 
+const comparisonData = [
+    {
+        criteria: "Vitesse",
+        traditional: {
+            text: "Lente/Moyenne (Perte de clients)",
+            icon: <div className="w-2 h-2 rounded-full bg-red-500 shrink-0" />
+        },
+        vortex: {
+            text: "Instantanée (Fidélise les clients)",
+            icon: <div className="w-2 h-2 rounded-full bg-vortex-accent shadow-[0_0_8px_cyan] shrink-0" />
+        }
+    },
+    {
+        criteria: "Maintenance",
+        traditional: {
+            text: "Vous la faites (Risque d'erreur)",
+            icon: null
+        },
+        vortex: {
+            text: "Nous la faisons (Concierge)",
+            icon: null
+        }
+    },
+    {
+        criteria: "Sécurité",
+        traditional: {
+            text: "Vulnérable aux Plugins/Hackers",
+            icon: null
+        },
+        vortex: {
+            text: "Blindée (Architecture Sécurisée)",
+            icon: null
+        }
+    },
+    {
+        criteria: "SEO Google",
+        traditional: {
+            text: "Optimisation Basique",
+            icon: null
+        },
+        vortex: {
+            text: "Natif & Prioritaire",
+            icon: null,
+            highlight: true
+        }
+    },
+    {
+        criteria: "Focus",
+        traditional: {
+            text: "Livrer le site et disparaître",
+            icon: null
+        },
+        vortex: {
+            text: "Partenariat à Long Terme",
+            icon: null
+        }
+    }
+];
+
 export const WhyChooseUs = () => {
     return (
         <section className="py-32 bg-vortex-dark relative overflow-hidden">
@@ -87,61 +146,67 @@ export const WhyChooseUs = () => {
                     </Reveal>
                 </div>
 
-                {/* Comparison Table */}
+                {/* Comparison Section */}
                 <Reveal delay={400} className="max-w-5xl mx-auto">
                     <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40 backdrop-blur-sm">
-                        <table className="w-full text-left border-collapse">
-                            <thead>
-                                <tr className="bg-white/5 border-b border-white/10">
-                                    <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Critère</th>
-                                    <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Agences Traditionnelles (WP/Wix)</th>
-                                    <th className="p-6 text-vortex-accent font-bold uppercase text-xs tracking-widest w-1/3 bg-vortex-accent/5">VORTEX.DEV (Next.js)</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-white/5">
-                                <tr>
-                                    <td className="p-6 text-white font-bold">Vitesse</td>
-                                    <td className="p-6 text-gray-400">
-                                        <div className="flex items-center gap-2">
-                                            <div className="w-2 h-2 rounded-full bg-red-500"></div> Lente/Moyenne (Perte de clients)
+
+                        {/* Desktop Table View */}
+                        <div className="hidden md:block overflow-x-auto">
+                            <table className="w-full text-left border-collapse min-w-[700px]">
+                                <thead>
+                                    <tr className="bg-white/5 border-b border-white/10">
+                                        <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Critère</th>
+                                        <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Agences Traditionnelles (WP/Wix)</th>
+                                        <th className="p-6 text-vortex-accent font-bold uppercase text-xs tracking-widest w-1/3 bg-vortex-accent/5">VORTEX.DEV (Next.js)</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-white/5">
+                                    {comparisonData.map((item, index) => (
+                                        <tr key={index}>
+                                            <td className="p-6 text-white font-bold">{item.criteria}</td>
+                                            <td className="p-6 text-gray-400">
+                                                <div className="flex items-center gap-2">
+                                                    {item.traditional.icon}
+                                                    {item.traditional.text}
+                                                </div>
+                                            </td>
+                                            <td className={`p-6 text-white bg-vortex-accent/5 ${item.vortex.highlight ? 'font-bold text-vortex-accent' : ''}`}>
+                                                <div className="flex items-center gap-2">
+                                                    {item.vortex.icon}
+                                                    {item.vortex.text}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {/* Mobile Card View */}
+                        <div className="md:hidden">
+                            {comparisonData.map((item, index) => (
+                                <div key={index} className="border-b border-white/10 last:border-0 p-6 flex flex-col gap-4">
+                                    <h4 className="text-white font-bold text-lg border-l-4 border-vortex-accent pl-3">{item.criteria}</h4>
+
+                                    <div className="bg-white/5 rounded-lg p-4">
+                                        <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Agences Traditionnelles</p>
+                                        <div className="text-gray-400 flex items-center gap-2 text-sm">
+                                            {item.traditional.icon}
+                                            {item.traditional.text}
                                         </div>
-                                    </td>
-                                    <td className="p-6 text-white bg-vortex-accent/5">
-                                        <div className="flex items-center gap-2">
-                                            <div className="w-2 h-2 rounded-full bg-vortex-accent shadow-[0_0_8px_cyan]"></div> Instantanée (Fidélise les clients)
+                                    </div>
+
+                                    <div className="bg-vortex-accent/10 rounded-lg p-4 border border-vortex-accent/20">
+                                        <p className="text-xs text-vortex-accent font-bold uppercase tracking-wider mb-2">VORTEX.DEV</p>
+                                        <div className={`text-white flex items-center gap-2 text-sm ${item.vortex.highlight ? 'font-bold text-vortex-accent' : ''}`}>
+                                            {item.vortex.icon}
+                                            {item.vortex.text}
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className="p-6 text-white font-bold">Maintenance</td>
-                                    <td className="p-6 text-gray-400">Vous la faites (Risque d'erreur)</td>
-                                    <td className="p-6 text-white bg-vortex-accent/5">
-                                        <div className="flex items-center gap-2">
-                                            Nous la faisons (Concierge)
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className="p-6 text-white font-bold">Sécurité</td>
-                                    <td className="p-6 text-gray-400">Vulnérable aux Plugins/Hackers</td>
-                                    <td className="p-6 text-white bg-vortex-accent/5">
-                                        <div className="flex items-center gap-2">
-                                            Blindée (Architecture Sécurisée)
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td className="p-6 text-white font-bold">SEO Google</td>
-                                    <td className="p-6 text-gray-400">Optimisation Basique</td>
-                                    <td className="p-6 text-white bg-vortex-accent/5 font-bold text-vortex-accent">Natif & Prioritaire</td>
-                                </tr>
-                                <tr>
-                                    <td className="p-6 text-white font-bold">Focus</td>
-                                    <td className="p-6 text-gray-400">Livrer le site et disparaître</td>
-                                    <td className="p-6 text-white bg-vortex-accent/5">Partenariat à Long Terme</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
                     </div>
                 </Reveal>
 

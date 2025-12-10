@@ -26,7 +26,8 @@ export const VortexCanvas: React.FC = () => {
     setSize();
     window.addEventListener('resize', setSize);
 
-    const particleCount = 100;
+    const isMobile = window.innerWidth < 768;
+    const particleCount = isMobile ? 40 : 100; // Reduce particles on mobile
     const particles: Star[] = [];
 
     // Cores mais sutis
@@ -85,8 +86,8 @@ export const VortexCanvas: React.FC = () => {
         ctx.fillStyle = this.color;
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
 
-        // Glow suave apenas nas partículas maiores
-        if (this.radius > 1) {
+        // Glow suave apenas nas partículas maiores e se não for mobile
+        if (!isMobile && this.radius > 1) {
           ctx.shadowBlur = 4;
           ctx.shadowColor = this.color;
         }

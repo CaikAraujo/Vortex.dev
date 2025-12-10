@@ -1,4 +1,4 @@
-'use client';
+
 
 import { Navbar } from '../../../components/Navbar';
 import { Contact } from '../../../components/Contact';
@@ -138,6 +138,13 @@ const maintenanceTiers: PricingTier[] = [
         buttonText: 'Contactez-nous',
     },
 ];
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Services & Tarifs | VORTEX.DEV',
+    description: 'Solutions complètes de développement web : Sites vitrines, E-commerce, SEO et Google Ads. Transparence totale et prix clairs pour le marché Suisse.',
+};
 
 export default function ServicesPage() {
     return (
