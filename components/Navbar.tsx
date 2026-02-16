@@ -73,7 +73,7 @@ export const Navbar: React.FC = () => {
           {NAV_LINKS.filter(link => link.href !== '#services' && link.href !== '#pricing').map((link) => (
             <a
               key={link.label}
-              href={`/${link.href}`}
+              href={link.href}
               className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
             >
               {link.label}

@@ -59,14 +59,7 @@ export const Contact: React.FC = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-32 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-vortex-muted text-sm">
-        <p>&copy; 2024 VORTEX.DEV. Tous les systèmes opérationnels.</p>
-        <div className="flex gap-6 mt-4 md:mt-0 font-mono">
-          <a href="#" className="hover:text-vortex-accent transition-colors">GITHUB</a>
-          <a href="#" className="hover:text-vortex-accent transition-colors">LINKEDIN</a>
-          <a href="#" className="hover:text-vortex-accent transition-colors">TWITTER</a>
-        </div>
-      </div>
+
     </section>
   );
 };

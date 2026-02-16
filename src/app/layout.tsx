@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 import { WhatsAppButton } from '../../components/WhatsAppButton';
+import { Footer } from '../../components/Footer';
 import { ModalProvider } from '../context/ModalContext';
 import StructuredData from '../../components/StructuredData';
 
@@ -98,6 +99,7 @@ export default function RootLayout({
                 <ModalProvider>
                     {children}
                     <WhatsAppButton />
+                    <Footer />
                 </ModalProvider>
                 <StructuredData />
             </body>

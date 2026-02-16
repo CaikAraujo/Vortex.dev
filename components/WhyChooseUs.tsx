@@ -77,12 +77,11 @@ export const WhyChooseUs = () => {
                 {/* Header */}
                 <Reveal className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">
-                        Performance d'Élite & <span className="text-vortex-accent">Gestion Concierge.</span>
+                        Excellence Technique & <span className="text-vortex-accent">Sérénité Absolue.</span>
                     </h2>
                     <h3 className="text-xl text-vortex-muted max-w-3xl mx-auto font-light leading-relaxed">
-                        Nous ne sommes pas seulement une agence web. Nous sommes votre département technologique.
-                        Nous allions la vitesse de <span className="text-white font-semibold">Next.js</span> à un service de gestion complet.
-                        Vous vous concentrez sur votre activité, nous nous occupons de chaque pixel et de chaque ligne de code.
+                        Plus qu'une agence Web, votre <span className="text-white font-semibold">partenaire digital à Genève</span>.
+                        Alliez la puissance du développement sur-mesure à un accompagnement de proximité.
                     </h3>
                 </Reveal>
 
@@ -93,9 +92,9 @@ export const WhyChooseUs = () => {
                         <div className="w-14 h-14 bg-vortex-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <Zap className="text-vortex-accent" size={28} />
                         </div>
-                        <h4 className="text-xl font-bold text-white mb-4">Technologie de Pointe (Adieu, WordPress)</h4>
+                        <h4 className="text-xl font-bold text-white mb-4">Architecture Moderne & Robuste</h4>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                            Alors que le marché s'accroche à des technologies anciennes et lentes, nous bâtissons l'avenir avec Next.js — l'infrastructure utilisée par Netflix et Uber.
+                            Nous développons des solutions pérennes avec Next.js, le standard de l'industrie pour la performance et l'évolutivité. Pas de dette technique, juste de l'excellence.
                         </p>
                         <div className="border-t border-white/5 pt-4">
                             <p className="text-vortex-accent text-xs font-bold uppercase tracking-wider">
@@ -112,9 +111,9 @@ export const WhyChooseUs = () => {
                         <div className="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <UserCheck className="text-purple-400" size={28} />
                         </div>
-                        <h4 className="text-xl font-bold text-white mb-4">La Fin du "Faites-le Vous-même"</h4>
+                        <h4 className="text-xl font-bold text-white mb-4">Accompagnement Sur-mesure</h4>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                            Fatigué d'essayer d'éditer votre site et de "casser" la mise en page ? Avec notre modèle Concierge Digital, plus besoin de toucher au code ou à des tableaux de bord complexes.
+                            Fini le "bricolage" interne. Notre équipe gère votre écosystème digital comme une extension de votre entreprise. Vous décidez, nous exécutons.
                         </p>
                         <div className="border-t border-white/5 pt-4">
                             <p className="text-purple-400 text-xs font-bold uppercase tracking-wider">
@@ -131,9 +130,9 @@ export const WhyChooseUs = () => {
                         <div className="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                             <Shield className="text-emerald-400" size={28} />
                         </div>
-                        <h4 className="text-xl font-bold text-white mb-4">Sécurité et Stabilité Suisse</h4>
+                        <h4 className="text-xl font-bold text-white mb-4">Sécurité & Conformité Suisse</h4>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                            Les sites ordinaires dépendent de plugins vulnérables. Notre architecture est statique et blindée.
+                            Infrastructure blindée et respect strict de la nLPD. Vos données et celles de vos clients sont hébergées et traitées avec la plus haute rigueur.
                         </p>
                         <div className="border-t border-white/5 pt-4">
                             <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider">
@@ -213,7 +212,7 @@ export const WhyChooseUs = () => {
                 {/* CTA */}
                 <Reveal delay={500} className="text-center mt-20">
                     <a href="#contact" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-vortex-accent transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] cursor-pointer group">
-                        Je veux un site Haute Performance sans maux de tête
+                        Discuter de votre Projet
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                     </a>
                     <p className="text-gray-500 mt-4 text-sm uppercase tracking-widest">

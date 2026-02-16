@@ -32,7 +32,10 @@ export interface Project {
   id: string;
   title: string;
   category: string;
+  description: string;
   image: string;
+  technologies: string[];
+  link?: string;
 }
 
 export interface WorkflowStep {

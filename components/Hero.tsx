@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 import { Reveal } from './ui/Section';
 import { VortexCanvas } from './ui/VortexCanvas';
@@ -38,7 +39,8 @@ export const Hero: React.FC = () => {
 
         <Reveal delay={400}>
           <p className="max-w-2xl mx-auto text-vortex-muted text-lg md:text-xl mb-12 leading-relaxed font-light backdrop-blur-sm p-4 rounded-lg bg-black/20 border border-white/5">
-            Nous accélérons l'évolution numérique de votre entreprise. Une ingénierie logicielle complexe simplifiée en expériences numériques immersives.
+            Votre <span className="text-white font-medium">agence genevoise</span> pour des solutions digitales <span className="text-white font-medium">robustes et pérennes</span>.
+            Alliez performance technique et <span className="text-white font-medium">fiabilité suisse</span> pour propulser votre entreprise.
           </p>
         </Reveal>
 
@@ -50,12 +52,12 @@ export const Hero: React.FC = () => {
             >
               Démarrer un Projet _&gt;
             </a>
-            <a
-              href="#projects"
+            <Link
+              href="/projets"
               className="w-full md:w-auto px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium rounded hover:border-vortex-accent hover:text-vortex-accent transition-colors duration-300"
             >
               Voir le Portfolio
-            </a>
+            </Link>
           </div>
         </Reveal>
       </div>

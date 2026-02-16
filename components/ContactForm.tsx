@@ -15,7 +15,6 @@ const formSchema = z.object({
     name: z.string().min(2, "Le nom doit comporter au moins 2 caractères"),
     company: z.string().min(2, "L'entreprise doit comporter au moins 2 caractères"),
     source: z.string().min(1, "Veuillez sélectionner une option"),
-    budget: z.string().optional(),
     email: z.string().email("Email invalide"),
     phone: z.string().min(10, "Numéro de téléphone trop court"),
     message: z.string().min(10, "Le message doit comporter au moins 10 caractères"),
@@ -30,7 +29,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
         name: '',
         company: '',
         source: '',
-        budget: '',
         email: '',
         phone: '',
         message: ''
@@ -56,7 +54,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Custom validation for Budget (required only if NOT template)
         const result = formSchema.safeParse(formData);
         const newErrors: Record<string, string> = {};
 
@@ -64,11 +61,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
             result.error.issues.forEach(issue => {
                 newErrors[String(issue.path[0])] = issue.message;
             });
-        }
-
-        // Manually check budget if not template
-        if (!isTemplate && !formData.budget) {
-            newErrors.budget = "Veuillez sélectionner un budget";
         }
 
         if (Object.keys(newErrors).length > 0) {
@@ -125,41 +117,21 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
                 </div>
             </div>
 
-            <div className={`grid grid-cols-1 ${isTemplate ? '' : 'md:grid-cols-2'} gap-6`}>
-                <div className="space-y-2">
-                    <label htmlFor="source" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Comment vous nous avez connus ?</label>
-                    <select
-                        id="source"
-                        value={formData.source}
-                        onChange={handleChange}
-                        className={`${getInputClass('source')} appearance-none cursor-pointer`}
-                    >
-                        <option value="" className="bg-vortex-dark text-gray-400">Sélectionnez...</option>
-                        <option value="linkedin" className="bg-vortex-dark text-white">LinkedIn</option>
-                        <option value="google" className="bg-vortex-dark text-white">Google</option>
-                        <option value="referral" className="bg-vortex-dark text-white">Recommandation</option>
-                        <option value="other" className="bg-vortex-dark text-white">Autre</option>
-                    </select>
-                    {errors.source && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.source}</p>}
-                </div>
-                {!isTemplate && (
-                    <div className="space-y-2">
-                        <label htmlFor="budget" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Budget Estimé</label>
-                        <select
-                            id="budget"
-                            value={formData.budget}
-                            onChange={handleChange}
-                            className={`${getInputClass('budget')} appearance-none cursor-pointer`}
-                        >
-                            <option value="" className="bg-vortex-dark text-gray-400">Sélectionnez...</option>
-                            <option value="sm" className="bg-vortex-dark text-white">Jusqu'à CHF 5k</option>
-                            <option value="md" className="bg-vortex-dark text-white">CHF 5k - CHF 10k</option>
-                            <option value="lg" className="bg-vortex-dark text-white">CHF 10k - CHF 20k</option>
-                            <option value="xl" className="bg-vortex-dark text-white">+CHF 20k</option>
-                        </select>
-                        {errors.budget && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.budget}</p>}
-                    </div>
-                )}
+            <div className="space-y-2">
+                <label htmlFor="source" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Comment vous nous avez connus ?</label>
+                <select
+                    id="source"
+                    value={formData.source}
+                    onChange={handleChange}
+                    className={`${getInputClass('source')} appearance-none cursor-pointer`}
+                >
+                    <option value="" className="bg-vortex-dark text-gray-400">Sélectionnez...</option>
+                    <option value="linkedin" className="bg-vortex-dark text-white">LinkedIn</option>
+                    <option value="google" className="bg-vortex-dark text-white">Google</option>
+                    <option value="referral" className="bg-vortex-dark text-white">Recommandation</option>
+                    <option value="other" className="bg-vortex-dark text-white">Autre</option>
+                </select>
+                {errors.source && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.source}</p>}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

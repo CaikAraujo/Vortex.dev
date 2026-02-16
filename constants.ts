@@ -1,8 +1,7 @@
 import { ServiceItem, PricingTier, Testimonial, Project, WorkflowStep, WhyChooseUsItem } from './types';
 
 export const NAV_LINKS = [
-  { label: 'Projets', href: '#projects' },
-  { label: 'Avis', href: '#testimonials' },
+  { label: 'Projets', href: '/projets' },
 ];
 
 export const SERVICES: ServiceItem[] = [
@@ -36,7 +35,7 @@ export const PRICING: PricingTier[] = [
   {
     id: 'mvp',
     name: 'MVP',
-    price: 'CHF 3.990',
+    price: 'CHF 2.900',
     description: 'Pour les startups et entreprises ayant besoin de valider des idées rapidement.',
     highlight: false,
     features: [
@@ -51,7 +50,7 @@ export const PRICING: PricingTier[] = [
   {
     id: 'scale',
     name: 'Scale',
-    price: 'CHF 5.990',
+    price: 'CHF 4.500',
     description: 'Le choix définitif pour les entreprises en croissance.',
     highlight: true,
     features: [
@@ -118,9 +117,39 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Neon Bank App',
-    category: 'Fintech',
-    image: 'https://picsum.photos/600/400?random=10'
+    title: 'Chez Energie',
+    category: 'AI & Web App',
+    description: 'Plateforme innovante d\'économie d\'énergie propulsée par l\'IA (Gemini). Analyse intelligente et recommandations personnalisées pour l\'habitat.',
+    image: '/images/chez-energie.jpg',
+    technologies: ['Next.js 14', 'Tailwind CSS', 'Vercel AI SDK', 'Gemini API'],
+    link: 'https://github.com/CaikAraujo/chez-energie'
+  },
+  {
+    id: '2',
+    title: 'Fridge Telemetry',
+    category: 'IoT & Industrial',
+    description: 'Système IoT de surveillance thermique critique. Rapports PDF automatisés et alertes en temps réel pour garantir la chaîne du froid.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    technologies: ['Java 21', 'Spring Boot 3', 'MySQL', 'Docker', 'OpenPDF'],
+    link: 'https://github.com/CaikAraujo/Fridge-Telemetry-System'
+  },
+  {
+    id: '3',
+    title: 'Scheduler API',
+    category: 'Backend Architecture',
+    description: 'API de gestion de plannings haute performance. Architecture robuste, transactions atomiques, sécurité bancaire et scalabilité horizontale.',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
+    technologies: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Spring Security'],
+    link: 'https://github.com/CaikAraujo/Scheduler-API'
+  },
+  {
+    id: '4',
+    title: 'VF Froid',
+    category: 'Corporate Website',
+    description: 'Site vitrine ultra-moderne pour expert en réfrigération. Design sombre élégant, animations fluides et présentation premium des services.',
+    image: '/images/vf-froid.png',
+    technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
+    link: 'https://vffroid.ch'
   }
 ];
 

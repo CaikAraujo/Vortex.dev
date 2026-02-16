@@ -1,44 +1,71 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
 import { Reveal } from './ui/Section';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-32 bg-vortex-black overflow-hidden">
-      <Reveal className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-6">
-          Projets <span className="text-vortex-accent">Sélectionnés.</span>
-        </h2>
-      </Reveal>
+    <section id="projects" className="py-20 bg-vortex-black relative">
+      <div className="max-w-7xl mx-auto px-6">
 
-      <div className="relative w-full overflow-hidden group">
-        {/* Marquee effect wrapper */}
-        <div className="flex gap-8 animate-[scroll_30s_linear_infinite] group-hover:[animation-play-state:paused] w-max">
-          {/* Duplicate array to create seamless loop */}
-          {[...PROJECTS, ...PROJECTS, ...PROJECTS].map((project, idx) => (
-            <div key={`${project.id}-${idx}`} className="relative w-[300px] md:w-[500px] aspect-video rounded-sm overflow-hidden flex-shrink-0 cursor-pointer grayscale hover:grayscale-0 transition-all duration-500">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent flex flex-col justify-end p-6 border-b-2 border-transparent hover:border-vortex-accent transition-colors">
-                <span className="text-vortex-accent text-xs font-mono font-bold uppercase tracking-wider mb-2">{project.category}</span>
-                <h3 className="text-white font-display text-2xl font-bold">{project.title}</h3>
+
+        <div className="space-y-32">
+          {PROJECTS.map((project, index) => (
+            <Reveal key={project.id} delay={index * 100} className="group">
+              <div className="flex flex-col md:flex-row gap-12 items-center">
+                {/* Image Section - Left side (or alternating if preferred, but sticking to request for now) */}
+                <div className="w-full md:w-1/2 aspect-video relative overflow-hidden rounded-sm border border-white/10 group-hover:border-vortex-accent/50 transition-colors duration-500">
+                  <div className="absolute inset-0 bg-vortex-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 filter grayscale group-hover:grayscale-0"
+                  />
+                </div>
+
+                {/* Content Section - Right side */}
+                <div className="w-full md:w-1/2 space-y-6">
+                  <div className="flex items-center gap-4">
+                    <span className="text-vortex-accent text-sm font-mono font-bold uppercase tracking-wider">
+                      {project.category}
+                    </span>
+                    <div className="h-px bg-white/10 flex-grow" />
+                  </div>
+
+                  <h3 className="text-3xl md:text-5xl font-display font-bold text-white leading-tight">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-vortex-muted text-lg leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-vortex-text/80"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="pt-6">
+                    <a
+                      href={project.link || '#'}
+                      className="inline-flex items-center gap-2 text-white font-bold hover:text-vortex-accent transition-colors group/btn"
+                    >
+                      En savoir plus
+                      <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
-
-      <style>
-        {`
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-33.33%); }
-        }
-      `}
-      </style>
     </section>
   );
 };
