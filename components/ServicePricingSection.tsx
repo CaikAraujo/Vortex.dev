@@ -26,7 +26,7 @@ interface ServicePricingSectionProps {
 const themeStyles: Record<string, { bg: string; text: string; button: string; border: string }> = {
     blue: { bg: 'bg-blue-500/10', text: 'text-blue-400', button: 'bg-blue-600 hover:bg-blue-500', border: 'border-blue-500/30' },
     green: { bg: 'bg-green-500/10', text: 'text-green-400', button: 'bg-green-600 hover:bg-green-500', border: 'border-green-500/30' },
-    purple: { bg: 'bg-purple-500/10', text: 'text-purple-400', button: 'bg-purple-600 hover:bg-purple-500', border: 'border-purple-500/30' },
+    purple: { bg: 'bg-vortex-accent/10', text: 'text-vortex-accent', button: 'bg-vortex-accent hover:bg-yellow-500', border: 'border-vortex-accent/30' },
     orange: { bg: 'bg-orange-500/10', text: 'text-orange-400', button: 'bg-orange-600 hover:bg-orange-500', border: 'border-orange-500/30' },
     cyan: { bg: 'bg-cyan-500/10', text: 'text-cyan-400', button: 'bg-cyan-600 hover:bg-cyan-500', border: 'border-cyan-500/30' },
     vortex: { bg: 'bg-vortex-accent/10', text: 'text-vortex-accent', button: 'bg-vortex-accent hover:bg-white hover:text-black', border: 'border-vortex-accent/30' },

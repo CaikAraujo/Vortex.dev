@@ -69,7 +69,7 @@ export const WhyChooseUs = () => {
             {/* Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-vortex-accent/5 blur-[100px] rounded-full"></div>
-                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-purple-900/10 blur-[100px] rounded-full"></div>
+                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-vortex-accent/20 blur-[100px] rounded-full"></div>
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -108,15 +108,15 @@ export const WhyChooseUs = () => {
 
                     {/* Card 2 */}
                     <Reveal delay={200} className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-vortex-accent/30 transition-all group">
-                        <div className="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <UserCheck className="text-purple-400" size={28} />
+                        <div className="w-14 h-14 bg-vortex-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <UserCheck className="text-vortex-accent" size={28} />
                         </div>
                         <h4 className="text-xl font-bold text-white mb-4">Accompagnement Sur-mesure</h4>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
                             Fini le "bricolage" interne. Notre équipe gère votre écosystème digital comme une extension de votre entreprise. Vous décidez, nous exécutons.
                         </p>
                         <div className="border-t border-white/5 pt-4">
-                            <p className="text-purple-400 text-xs font-bold uppercase tracking-wider">
+                            <p className="text-vortex-accent text-xs font-bold uppercase tracking-wider">
                                 Comment ça marche :
                             </p>
                             <p className="text-white text-sm mt-1">
@@ -211,7 +211,7 @@ export const WhyChooseUs = () => {
 
                 {/* CTA */}
                 <Reveal delay={500} className="text-center mt-20">
-                    <a href="#contact" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-vortex-accent transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,240,255,0.5)] cursor-pointer group">
+                    <a href="#contact" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-vortex-accent transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(197,160,89,0.5)] cursor-pointer group">
                         Discuter de votre Projet
                         <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                     </a>

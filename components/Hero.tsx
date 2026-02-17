@@ -24,15 +24,15 @@ export const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-vortex-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-vortex-accent"></span>
             </span>
-            Système En Ligne
+            Architecture Digitale
           </div>
         </Reveal>
 
         <Reveal delay={200}>
           <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-9xl tracking-tighter text-white mb-8 leading-[0.9]">
-            ENTREZ DANS LE <br />
+            BÂTISSEZ VOTRE <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-vortex-accent via-white to-vortex-accent animate-pulse bg-300% bg-left">
-              VORTEX
+              MONUMENT DIGITAL.
             </span>
           </h1>
         </Reveal>

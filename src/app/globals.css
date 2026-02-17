@@ -7,14 +7,19 @@
   --color-vortex-black: #050505;
   --color-vortex-dark: #0A0A0A;
   --color-vortex-gray: #171717;
-  --color-vortex-accent: #00F0FF;
-  --color-vortex-accentHover: #00C8D6;
-  --color-vortex-text: #EDEDED;
-  --color-vortex-muted: #A3A3A3;
+  --color-vortex-accent: #C5A059;
+  --color-vortex-accentHover: #D4AF37;
+  --color-vortex-text: #F8FAFC;
+  --color-vortex-muted: #94A3B8;
 
-  --color-neon-blue: #00F0FF;
-  --color-neon-purple: #BD00FF;
-  --color-neon-pink: #FF0099;
+  --color-bg-primary: #050505;
+  --color-bg-card: #171717;
+  --color-accent-gold: #C5A059;
+  --color-accent-glow: #38BDF8;
+
+  --color-neon-blue: #38BDF8;
+  --color-neon-purple: #C5A059;
+  --color-neon-pink: #C5A059;
 
   --image-grid-pattern: linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px);
   --image-glow-radial: radial-gradient(circle at center, var(--tw-gradient-stops));

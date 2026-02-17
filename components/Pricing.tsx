@@ -2,9 +2,59 @@
 
 import React, { useState } from 'react';
 import { Check, Sparkles, Zap } from 'lucide-react';
-import { PRICING } from '../constants';
 import { Reveal } from './ui/Section';
 import { useModal } from '../src/context/ModalContext';
+
+
+const PRICING_HOME = [
+  {
+    id: 'vitrine',
+    name: 'Site Vitrine',
+    price: 'CHF 1.900',
+    description: 'Parfait pour présenter votre activité en ligne.',
+    highlight: false,
+    features: [
+      { text: 'Design réactif sur mesure', included: true },
+      { text: "Jusqu'à 5 pages", included: true },
+      { text: 'Optimisation SEO de base', included: true },
+      { text: 'Formulaire de contact', included: true },
+      { text: 'Hébergement 1 an inclus', included: true },
+      { text: 'Support 3 mois', included: true },
+    ],
+  },
+  {
+    id: 'business',
+    name: 'Site Business',
+    price: 'CHF 2.900',
+    description: 'Solution complète pour développer votre entreprise.',
+    highlight: true,
+    features: [
+      { text: 'Design premium personnalisé', included: true },
+      { text: "Jusqu'à 10 pages", included: true },
+      { text: 'SEO avancé + Blog', included: true },
+      { text: 'Système de réservation', included: true },
+      { text: 'Intégrations (CRM, Email)', included: true },
+      { text: 'Analyses avancées', included: true },
+      { text: 'Support 6 mois', included: true },
+    ],
+  },
+  {
+    id: 'ecommerce',
+    name: 'E-commerce',
+    price: 'CHF 4.500',
+    description: 'Boutique en ligne complète avec ventes intégrées.',
+    highlight: false,
+    features: [
+      { text: 'Design e-commerce exclusif', included: true },
+      { text: "Config. initiale jusqu'à 50 produits", included: true },
+      { text: 'Paiement sécurisé (Stripe)', included: true },
+      { text: 'Gestion des stocks', included: true },
+      { text: "Panneau d'administration", included: true },
+      { text: 'SEO pour e-commerce', included: true },
+      { text: 'Support 12 mois', included: true },
+    ],
+  },
+];
 
 export const Pricing: React.FC = () => {
   const [hoveredPlan, setHoveredPlan] = useState<string | null>(null);
@@ -26,7 +76,7 @@ export const Pricing: React.FC = () => {
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-          {PRICING.map((tier, index) => {
+          {PRICING_HOME.map((tier, index) => {
             // O plano do meio (Scale) é o destaque por padrão se nenhum estiver hovered, ou se hover lógico customizado fosse necessário.
             // Aqui usamos a prop 'highlight' do objeto.
             const isHighlighted = tier.highlight;

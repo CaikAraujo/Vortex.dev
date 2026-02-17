@@ -46,8 +46,7 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="font-display font-bold text-2xl tracking-tighter text-white flex items-center gap-2" aria-label="VORTEX.DEV Home">
-          <Terminal className="text-vortex-accent w-6 h-6" aria-hidden="true" />
-          VORTEX<span className="text-vortex-accent">.DEV</span>
+          <img src="/images/athana_logo.svg" alt="Athana Logo" className="h-14 w-auto" />
         </a>
 
         {/* Desktop Menu */}
