@@ -178,7 +178,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
                 disabled={isSubmitting}
                 className="w-full bg-vortex-accent text-black font-bold text-lg py-4 rounded-sm hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
-                {isSubmitting ? 'Envoi...' : 'Envoyer'}
+                {isSubmitting ? 'Initialisation...' : 'Initier le Projet'}
                 {!isSubmitting && <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
             </button>
         </form>

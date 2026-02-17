@@ -44,10 +44,10 @@ const MOCK_TEMPLATES: TemplateProduct[] = [
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Templates Premium | VORTEX.DEV',
+    title: 'Templates Premium | ATHANA',
     description: 'Accélérez votre lancement avec nos templates Next.js haute performance. Design suisse, code propre et optimisation SEO native.',
     openGraph: {
-        title: 'Templates Premium Next.js | VORTEX.DEV',
+        title: 'Templates Premium Next.js | ATHANA',
         description: 'Boutique de code pour startups et entreprises exigeantes.',
     }
 };
@@ -59,18 +59,17 @@ export default function TemplatesPage() {
 
             {/* Hero Section */}
             <section className="pt-40 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-purple-500/5 blur-[120px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-vortex-accent/5 blur-[120px] pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <Reveal>
-                        <span className="inline-block px-4 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6">
-                            Boutique de Code
+                        <span className="inline-block px-4 py-1.5 rounded-full border border-vortex-accent/30 bg-vortex-accent/10 text-vortex-accent text-xs font-bold uppercase tracking-widest mb-6">
+                            Fondations Digitales
                         </span>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
-                            Templates <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Premium</span>
+                            Solutions <span className="text-vortex-accent">Pré-Architecturées</span>
                         </h1>
                         <p className="text-xl text-vortex-muted max-w-2xl mx-auto font-light leading-relaxed">
-                            Choisissez votre base et nous personnalisons tout pour votre marque.
-                            La valeur inclut déjà le code et les adaptations dont vous avez besoin.
+                            Des bases de code haute performance, prêtes à être déployées et personnalisées pour votre marque.
                         </p>
                     </Reveal>
                 </div>

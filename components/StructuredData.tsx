@@ -4,19 +4,19 @@ export default function StructuredData() {
         '@graph': [
             {
                 '@type': 'ProfessionalService',
-                '@id': 'https://vortex-dev.com/#organization',
-                name: 'VORTEX.DEV',
-                url: 'https://vortex-dev.com',
-                logo: 'https://vortex-dev.com/og-image.jpg',
-                image: 'https://vortex-dev.com/og-image.jpg',
+                '@id': 'https://athana.ch/#organization',
+                name: 'ATHANA',
+                url: 'https://athana.ch',
+                logo: 'https://athana.ch/og-image.jpg',
+                image: 'https://athana.ch/og-image.jpg',
                 description: 'Agence de développement web premium à Genève. Spécialistes Next.js, SEO et Design UI/UX.',
-                telephone: '+41 79 123 45 67', // Placeholder
-                email: 'contact@vortex-dev.com', // Placeholder
+                telephone: '+41 78 339 98 95',
+                email: 'hello@athana.ch',
                 foundingDate: '2024',
 
                 address: {
                     '@type': 'PostalAddress',
-                    streetAddress: 'Rue du Rhône 14', // Placeholder location
+                    streetAddress: 'Rue du Rhône 14',
                     addressLocality: 'Genève',
                     postalCode: '1204',
                     addressCountry: 'CH'
@@ -49,10 +49,10 @@ export default function StructuredData() {
                 },
 
                 sameAs: [
-                    'https://instagram.com/vortex.dev',
-                    'https://linkedin.com/company/vortex-dev',
-                    'https://github.com/vortex-dev',
-                    'https://twitter.com/vortex_dev'
+                    'https://instagram.com/athana.ch',
+                    'https://linkedin.com/company/athana-ch',
+                    'https://github.com/athana-ch',
+                    'https://twitter.com/athana_ch'
                 ],
 
                 hasOfferCatalog: {
@@ -92,11 +92,11 @@ export default function StructuredData() {
             },
             {
                 '@type': 'WebSite',
-                '@id': 'https://vortex-dev.com/#website',
-                url: 'https://vortex-dev.com',
-                name: 'VORTEX.DEV',
+                '@id': 'https://athana.ch/#website',
+                url: 'https://athana.ch',
+                name: 'ATHANA',
                 publisher: {
-                    '@id': 'https://vortex-dev.com/#organization'
+                    '@id': 'https://athana.ch/#organization'
                 },
                 inLanguage: 'fr-CH'
             },
@@ -107,19 +107,19 @@ export default function StructuredData() {
                         '@type': 'ListItem',
                         position: 1,
                         name: 'Accueil',
-                        item: 'https://vortex-dev.com'
+                        item: 'https://athana.ch'
                     },
                     {
                         '@type': 'ListItem',
                         position: 2,
                         name: 'Services',
-                        item: 'https://vortex-dev.com/services'
+                        item: 'https://athana.ch/services'
                     },
                     {
                         '@type': 'ListItem',
                         position: 3,
                         name: 'Templates',
-                        item: 'https://vortex-dev.com/templates'
+                        item: 'https://athana.ch/templates'
                     }
                 ]
             }

@@ -85,7 +85,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Ricardo Almeida',
     role: 'CTO',
     company: 'Nexus Tech',
-    content: "VORTEX.DEV a élevé notre standard de qualité. Le code livré est propre, moderne et la performance du site a triplé nos conversions.",
+    content: "ATHANA a élevé notre standard de qualité. Le code livré est propre, moderne et la performance du site a triplé nos conversions.",
     image: 'https://picsum.photos/100/100?random=1',
   },
   {
@@ -93,7 +93,7 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Fernanda Costa',
     role: 'Product Owner',
     company: 'Studio Aura',
-    content: "Ils parlent la langue des développeurs et comprennent les besoins de l'entreprise. VORTEX n'est pas juste une agence, c'est un partenaire technique.",
+    content: "Ils parlent la langue des développeurs et comprennent les besoins de l'entreprise. Athana n'est pas juste une agence, c'est un partenaire technique.",
     image: 'https://picsum.photos/100/100?random=2',
   },
   {

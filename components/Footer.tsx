@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
         <footer className="bg-vortex-black text-vortex-muted py-12 border-t border-white/5">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
                 <div className="text-sm">
-                    <p>&copy; {new Date().getFullYear()} VORTEX.DEV. Tous les droits réservés.</p>
+                    <p>&copy; {new Date().getFullYear()} ATHANA. Tous les droits réservés.</p>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-6 font-mono text-sm">

@@ -73,8 +73,8 @@ const TemplateCard: React.FC<TemplateCardProps> = ({ template, index }) => {
                             onClick={() => openModal(`Template: ${template.name}`)}
                             className="bg-white text-black hover:bg-vortex-accent font-bold py-2 px-4 rounded-lg flex items-center gap-2 text-sm transition-all duration-300 cursor-pointer"
                         >
-                            Acheter
-                            <ShoppingCart size={16} />
+                            Déployer cette base
+                            <ArrowRight size={16} />
                         </button>
                     </div>
                 </div>

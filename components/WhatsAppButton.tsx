@@ -7,7 +7,7 @@ export const WhatsAppButton = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const phoneNumber = '41783399895';
-    const message = 'Bonjour, je souhaite en savoir plus sur les services de Vortex.';
+    const message = 'Bonjour, je souhaite en savoir plus sur les services de Athana.';
 
     useEffect(() => {
         // Show button after a small delay to not block initial content
@@ -35,7 +35,7 @@ export const WhatsAppButton = () => {
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-[0_4px_14px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300"
+                className="group relative flex items-center justify-center w-14 h-14 bg-[#11422C] hover:bg-[#1A5C3D] text-white rounded-full shadow-[0_4px_14px_rgba(17,66,44,0.5)] hover:shadow-[0_6px_20px_rgba(17,66,44,0.7)] hover:-translate-y-1 transition-all duration-300"
                 aria-label="Chat on WhatsApp"
             >
                 <svg
@@ -49,7 +49,7 @@ export const WhatsAppButton = () => {
                 {/* Ping animation */}
                 <span className="absolute -top-1 -right-1 flex h-3 w-3">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#25D366]"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-[#11422C]"></span>
                 </span>
             </a>
         </div>

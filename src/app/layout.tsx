@@ -18,15 +18,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://vortex-dev.com'),
+    metadataBase: new URL('https://athana.ch'),
     title: {
-        default: 'VORTEX.DEV | Agence Web & Développement Next.js Suisse',
-        template: '%s | VORTEX.DEV'
+        default: 'ATHANA | Agence Web & Développement Next.js Suisse',
+        template: '%s | ATHANA'
     },
-    description: 'Transformez votre présence en ligne avec VORTEX.DEV. Agence spécialisée en développement Next.js haute performance, design UI/UX et solutions digitales à Genève.',
+    description: 'Transformez votre présence en ligne avec ATHANA. Agence spécialisée en développement Next.js haute performance, design UI/UX et solutions digitales à Genève.',
     keywords: [
         'Agence Web Genève', 'Développement Next.js', 'Création Site Web Suisse', 'React Developer',
-        'SEO Technique', 'Application Mobile', 'Vortex Dev', 'Agence digitale Suisse', 'Web Design Genève',
+        'SEO Technique', 'Application Mobile', 'Athana', 'Agence digitale Suisse', 'Web Design Genève',
         'Développeur Freelance Suisse', 'Refonte site internet', 'Création site e-commerce',
         'Site vitrine premium', 'Agence SEO Genève', 'Optimisation performance web', 'Expertise React',
         'Développement application web', 'Logiciel sur mesure', 'Design System', 'Transformation digitale',
@@ -36,25 +36,25 @@ export const metadata: Metadata = {
         'Web App Progressive (PWA)', 'Consulting Tech', 'Agence marketing digital', 'Growth Hacking',
         'Référencement Google', 'Lausanne', 'Zurich', 'Vaud'
     ],
-    authors: [{ name: 'VORTEX.DEV Team' }],
-    creator: 'VORTEX.DEV',
+    authors: [{ name: 'ATHANA Team' }],
+    creator: 'ATHANA',
     openGraph: {
         type: 'website',
         locale: 'fr_CH',
-        url: 'https://vortex-dev.com',
-        title: 'VORTEX.DEV | L\'élite du Développement Web Suisse',
+        url: 'https://athana.ch',
+        title: 'ATHANA | L\'élite du Développement Web Suisse',
         description: 'Nous construisons des produits numériques ultra-rapides et sécurisés qui convertissent.',
-        siteName: 'VORTEX.DEV',
+        siteName: 'ATHANA',
         images: [{
             url: '/og-image.jpg',
             width: 1200,
             height: 630,
-            alt: 'VORTEX.DEV Digital Agency',
+            alt: 'ATHANA Digital Agency',
         }],
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'VORTEX.DEV | Agence Web Next.js',
+        title: 'ATHANA | Agence Web Next.js',
         description: 'Performance, Design, Résultat. Votre partenaire technologique en Suisse.',
         images: ['/og-image.jpg'],
     },
@@ -71,6 +71,11 @@ export const metadata: Metadata = {
     },
     verification: {
         google: 'votre-code-google-verification', // Placeholder
+    },
+    icons: {
+        icon: '/icon.svg',
+        shortcut: '/icon.svg',
+        apple: '/icon.svg',
     },
 };
 

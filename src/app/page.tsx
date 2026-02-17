@@ -4,7 +4,7 @@ import { Hero } from '../../components/Hero';
 import { Metadata } from 'next';
 
 // Lazy load components below the fold for better initial load performance
-const Pricing = dynamic(() => import('../../components/Pricing').then(mod => mod.Pricing));
+const Services = dynamic(() => import('../../components/Services').then(mod => mod.Services));
 const Testimonials = dynamic(() => import('../../components/Testimonials').then(mod => mod.Testimonials));
 const WhyChooseUs = dynamic(() => import('../../components/WhyChooseUs').then(mod => mod.WhyChooseUs));
 const Contact = dynamic(() => import('../../components/Contact').then(mod => mod.Contact));
@@ -20,9 +20,9 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
-                <Pricing />
-                <Testimonials />
+                <Services />
                 <WhyChooseUs />
+                <Testimonials />
                 <Contact />
             </main>
         </div>

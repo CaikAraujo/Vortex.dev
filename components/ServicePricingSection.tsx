@@ -21,6 +21,7 @@ interface ServicePricingSectionProps {
     category: string;
     tiers: PricingTier[];
     colorTheme?: string; // 'blue', 'green', 'purple', 'orange', 'cyan'
+    id?: string;
 }
 
 const themeStyles: Record<string, { bg: string; text: string; button: string; border: string }> = {
@@ -32,12 +33,12 @@ const themeStyles: Record<string, { bg: string; text: string; button: string; bo
     vortex: { bg: 'bg-vortex-accent/10', text: 'text-vortex-accent', button: 'bg-vortex-accent hover:bg-white hover:text-black', border: 'border-vortex-accent/30' },
 };
 
-export const ServicePricingSection: React.FC<ServicePricingSectionProps> = ({ title, subtitle, category, tiers, colorTheme = 'vortex' }) => {
+export const ServicePricingSection: React.FC<ServicePricingSectionProps> = ({ title, subtitle, category, tiers, colorTheme = 'vortex', id }) => {
     const styles = themeStyles[colorTheme] || themeStyles.vortex;
     const { openModal } = useModal();
 
     return (
-        <section className="py-24 relative border-t border-white/5">
+        <section id={id} className="py-24 relative border-t border-white/5 scroll-mt-32">
             <div className="max-w-7xl mx-auto px-6">
                 <Reveal>
                     <div className="text-center mb-16 space-y-4">

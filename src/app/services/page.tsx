@@ -11,14 +11,14 @@ const webDevTiers: PricingTier[] = [
         description: 'Parfait pour présenter votre activité en ligne.',
         price: 'CHF 1.900',
         features: ['Design réactif sur mesure', 'Jusqu\'à 5 pages', 'Optimisation SEO de base', 'Formulaire de contact', 'Hébergement 1 an inclus', 'Support 3 mois'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: 'Planifier mon site',
     },
     {
         name: 'Site Business',
         description: 'Solution complète pour développer votre entreprise.',
         price: 'CHF 2.900',
         features: ['Design premium personnalisé', 'Jusqu\'à 10 pages', 'SEO avancé + Blog', 'Système de réservation', 'Intégrations (CRM, Email)', 'Analyses avancées', 'Support 6 mois'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: 'Planifier mon site',
         highlight: true,
     },
     {
@@ -26,7 +26,7 @@ const webDevTiers: PricingTier[] = [
         description: 'Boutique en ligne complète avec ventes intégrées.',
         price: 'CHF 4.500',
         features: ['Design e-commerce exclusif', 'Config. initiale jusqu\'à 50 produits', 'Paiement sécurisé (Stripe/TWINT)', 'Gestion des stocks', 'Panneau d\'administration', 'SEO pour e-commerce', 'Support 12 mois'],
-        buttonText: 'Lancer ma Boutique',
+        buttonText: 'Concevoir ma boutique',
     },
 ];
 
@@ -37,7 +37,7 @@ const seoTiers: PricingTier[] = [
         price: 'CHF 600',
         period: '/mois',
         features: ['Audit SEO initial', 'Optimisation technique de base', '5 mots-clés cibles', 'Rapport mensuel', 'Support par email'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: "Démarrer l'optimisation",
     },
     {
         name: 'SEO Avancé',
@@ -45,7 +45,7 @@ const seoTiers: PricingTier[] = [
         price: 'CHF 1.050',
         period: '/mois',
         features: ['Audit SEO complet', 'Optimisation technique avancée', '15 mots-clés cibles', 'Création de contenu (2 articles/mois)', 'Netlinking de base', 'Rapport détaillé'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: 'Définir une stratégie',
         highlight: true,
     },
     {
@@ -54,7 +54,7 @@ const seoTiers: PricingTier[] = [
         price: 'CHF 1.850',
         period: '/mois',
         features: ['Stratégie SEO 360º', 'Mots-clés illimités', 'Contenu premium (4 articles/mois)', 'Netlinking avancé', 'Analyse des concurrents', 'Consultant dédié', 'Support prioritaire'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: 'Demander un audit',
     },
 ];
 
@@ -73,7 +73,7 @@ const adsTiers: PricingTier[] = [
         price: 'CHF 900',
         period: '/mois',
         features: ['Gestion complète des campagnes', 'Search + Display', 'Remarketing dynamique', 'Optimisation hebdomadaire', 'Rapport bimensuel', 'Consultant dédié'],
-        buttonText: 'Choisir ce Plan',
+        buttonText: "Planifier l'acquisition",
         highlight: true,
     },
     {
@@ -82,7 +82,7 @@ const adsTiers: PricingTier[] = [
         price: 'CHF 1.650',
         period: '/mois',
         features: ['Stratégie multi-canal', 'Shopping + Vidéo (YouTube)', 'Optimisation IA', 'Tests A/B continus', 'Tableau de bord personnalisé', 'Support 24/7'],
-        buttonText: 'Contactez-nous',
+        buttonText: 'Parler à un expert',
     },
 ];
 
@@ -92,14 +92,14 @@ const performanceTiers: PricingTier[] = [
         description: 'Améliorez la vitesse essentielle du site.',
         price: 'CHF 600',
         features: ['Audit de performance', 'Optimisation des images', 'Cache navigateur', 'Minification CSS/JS', 'Rapport avant/après'],
-        buttonText: 'Optimiser Maintenant',
+        buttonText: 'Accélérer mon site',
     },
     {
         name: 'Optimisation Avancée',
         description: 'Performance maximale (Core Web Vitals).',
         price: 'CHF 1.100',
         features: ['Audit complet', 'Optimisation des images (WebP)', 'Cache avancé (Redis/Varnish)', 'Configuration CDN', 'Lazy loading intelligent', 'Garantie de score vert'],
-        buttonText: 'Optimiser Maintenant',
+        buttonText: 'Accélérer mon site',
         highlight: true,
     },
     {
@@ -107,7 +107,7 @@ const performanceTiers: PricingTier[] = [
         description: 'Solution définitive de vitesse.',
         price: 'CHF 1.850',
         features: ['Analyse d\'architecture', 'Refactorisation de code critique', 'CDN Enterprise', 'Monitoring RUM', 'Conseil technique', 'Formation équipe'],
-        buttonText: 'Contactez-nous',
+        buttonText: 'Planifier une refonte',
     },
 ];
 
@@ -118,7 +118,7 @@ const maintenanceTiers: PricingTier[] = [
         price: 'CHF 120',
         period: '/mois',
         features: ['Mises à jour plugins/core', 'Sauvegarde hebdomadaire', 'Monitoring 24/7', 'Support par email'],
-        buttonText: 'Souscrire',
+        buttonText: 'Protéger mon site',
     },
     {
         name: 'Pro',
@@ -126,7 +126,7 @@ const maintenanceTiers: PricingTier[] = [
         price: 'CHF 290',
         period: '/mois',
         features: ['Mises à jour prioritaires', 'Sauvegarde quotidienne', 'Monitoring avancé', 'Heures de développement (2h)', 'Optimisation de performance', 'Support prioritaire'],
-        buttonText: 'Souscrire',
+        buttonText: 'Protéger mon site',
         highlight: true,
     },
     {
@@ -135,7 +135,7 @@ const maintenanceTiers: PricingTier[] = [
         price: 'Sur Devis',
         period: '/mois',
         features: ['Mises à jour en temps réel', 'Sauvegardes multi-sites', 'Monitoring de sécurité proactif', 'Développement continu', 'SLA Garanti', 'Gestionnaire de compte'],
-        buttonText: 'Contactez-nous',
+        buttonText: 'Auditer mon infrastructure',
     },
 ];
 
@@ -174,6 +174,7 @@ export default function ServicesPage() {
             </section>
 
             <ServicePricingSection
+                id="web"
                 category="Développement"
                 title="Création de Sites & Apps"
                 subtitle="Choisissez la solution qui correspond à vos besoins et à votre budget."
@@ -182,6 +183,7 @@ export default function ServicesPage() {
             />
 
             <ServicePricingSection
+                id="seo"
                 category="Visibilité"
                 title="Optimisation SEO"
                 subtitle="Augmentez votre visibilité sur Google avec nos stratégies de recherche."
@@ -190,6 +192,7 @@ export default function ServicesPage() {
             />
 
             <ServicePricingSection
+                id="ads"
                 category="Trafic Payant"
                 title="Google Ads & Performance"
                 subtitle="Générez plus de leads et de ventes avec des campagnes optimisées. (Budget publicitaire non inclus)"
@@ -198,6 +201,7 @@ export default function ServicesPage() {
             />
 
             <ServicePricingSection
+                id="performance"
                 category="Vitesse"
                 title="Optimisation de Performance"
                 subtitle="Accélérez votre site pour une meilleure expérience utilisateur et un meilleur SEO."

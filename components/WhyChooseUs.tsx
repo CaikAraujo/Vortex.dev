@@ -127,15 +127,15 @@ export const WhyChooseUs = () => {
 
                     {/* Card 3 */}
                     <Reveal delay={300} className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-vortex-accent/30 transition-all group">
-                        <div className="w-14 h-14 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <Shield className="text-emerald-400" size={28} />
+                        <div className="w-14 h-14 bg-vortex-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <Shield className="text-vortex-accent" size={28} />
                         </div>
                         <h4 className="text-xl font-bold text-white mb-4">Sécurité & Conformité Suisse</h4>
                         <p className="text-gray-400 text-sm leading-relaxed mb-4">
                             Infrastructure blindée et respect strict de la nLPD. Vos données et celles de vos clients sont hébergées et traitées avec la plus haute rigueur.
                         </p>
                         <div className="border-t border-white/5 pt-4">
-                            <p className="text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                            <p className="text-vortex-accent text-xs font-bold uppercase tracking-wider">
                                 La Garantie :
                             </p>
                             <p className="text-white text-sm mt-1">
@@ -156,7 +156,7 @@ export const WhyChooseUs = () => {
                                     <tr className="bg-white/5 border-b border-white/10">
                                         <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Critère</th>
                                         <th className="p-6 text-gray-400 font-medium uppercase text-xs tracking-widest w-1/3">Agences Traditionnelles (WP/Wix)</th>
-                                        <th className="p-6 text-vortex-accent font-bold uppercase text-xs tracking-widest w-1/3 bg-vortex-accent/5">VORTEX.DEV (Next.js)</th>
+                                        <th className="p-6 text-vortex-accent font-bold uppercase text-xs tracking-widest w-1/3 bg-vortex-accent/5">ATHANA (Next.js)</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-white/5">
@@ -196,7 +196,7 @@ export const WhyChooseUs = () => {
                                     </div>
 
                                     <div className="bg-vortex-accent/10 rounded-lg p-4 border border-vortex-accent/20">
-                                        <p className="text-xs text-vortex-accent font-bold uppercase tracking-wider mb-2">VORTEX.DEV</p>
+                                        <p className="text-xs text-vortex-accent font-bold uppercase tracking-wider mb-2">ATHANA</p>
                                         <div className={`text-white flex items-center gap-2 text-sm ${item.vortex.highlight ? 'font-bold text-vortex-accent' : ''}`}>
                                             {item.vortex.icon}
                                             {item.vortex.text}

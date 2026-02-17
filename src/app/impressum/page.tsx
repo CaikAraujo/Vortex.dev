@@ -3,8 +3,8 @@ import { Navbar } from '../../../components/Navbar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Mentions Légales (Impressum) | VORTEX.DEV',
-    description: 'Mentions légales et informations de contact pour VORTEX.DEV.',
+    title: 'Mentions Légales (Impressum) | ATHANA',
+    description: 'Mentions légales et informations de contact pour ATHANA.',
 };
 
 export default function ImpressumPage() {
@@ -21,14 +21,14 @@ export default function ImpressumPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Éditeur du Site</h2>
                         <p>
-                            <strong>VORTEX.DEV</strong><br />
+                            <strong>ATHANA</strong><br />
                             Rue du Rhône 14<br />
                             1204 Genève<br />
                             Suisse
                         </p>
                         <p className="mt-4">
                             <strong>Contact :</strong><br />
-                            Email : <a href="mailto:hello@vortex.dev" className="text-vortex-accent hover:underline">hello@vortex.dev</a><br />
+                            Email : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a><br />
                             Téléphone : <a href="tel:+41783399895" className="text-vortex-accent hover:underline">+41 78 339 98 95</a>
                         </p>
                     </section>
@@ -36,7 +36,7 @@ export default function ImpressumPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Représentants Légaux</h2>
                         <p>
-                            L'agence VORTEX.DEV est représentée par sa direction.
+                            L'agence ATHANA est représentée par sa direction.
                         </p>
                     </section>
 
@@ -52,14 +52,14 @@ export default function ImpressumPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Propriété Intellectuelle</h2>
                         <p>
-                            L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) est la propriété exclusive de VORTEX.DEV ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.
+                            L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) est la propriété exclusive de ATHANA ou de ses partenaires. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.
                         </p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Responsabilité</h2>
                         <p>
-                            VORTEX.DEV ne peut être tenu responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site internet. De plus, nous déclinons toute responsabilité quant à l'utilisation qui pourrait être faite des informations et contenus présents sur ce site.
+                            ATHANA ne peut être tenu responsable des dommages directs et indirects causés au matériel de l'utilisateur, lors de l'accès au site internet. De plus, nous déclinons toute responsabilité quant à l'utilisation qui pourrait être faite des informations et contenus présents sur ce site.
                         </p>
                     </section>
                 </div>

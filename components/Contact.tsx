@@ -31,7 +31,7 @@ export const Contact: React.FC = () => {
                   <div className="w-12 h-12 bg-white/5 rounded-sm flex items-center justify-center text-vortex-accent group-hover:bg-vortex-accent group-hover:text-black transition-colors">
                     <Mail size={20} />
                   </div>
-                  <span className="group-hover:text-vortex-accent transition-colors">hello@vortex.dev</span>
+                  <span className="group-hover:text-vortex-accent transition-colors">hello@athana.ch</span>
                 </div>
                 <div className="flex items-center gap-4 text-gray-300 group cursor-pointer">
                   <div className="w-12 h-12 bg-white/5 rounded-sm flex items-center justify-center text-vortex-accent group-hover:bg-vortex-accent group-hover:text-black transition-colors">

@@ -3,7 +3,7 @@ import { Navbar } from '../../../components/Navbar';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Politique de Confidentialité | VORTEX.DEV',
+    title: 'Politique de Confidentialité | ATHANA',
     description: 'Protection des données et conformité nLPD.',
 };
 
@@ -20,7 +20,7 @@ export default function ConfidentialitePage() {
                 <div className="prose prose-invert max-w-none text-vortex-text/80 space-y-8">
                     <section>
                         <p>
-                            La protection de vos données personnelles est une priorité pour VORTEX.DEV. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations, conformément aux dispositions de la nouvelle Loi fédérale sur la Protection des Données (nLPD) en Suisse.
+                            La protection de vos données personnelles est une priorité pour ATHANA. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations, conformément aux dispositions de la nouvelle Loi fédérale sur la Protection des Données (nLPD) en Suisse.
                         </p>
                     </section>
 
@@ -28,10 +28,10 @@ export default function ConfidentialitePage() {
                         <h2 className="text-2xl font-bold text-white mb-4">1. Responsable du Traitement</h2>
                         <p>
                             Le responsable du traitement des données est :<br />
-                            <strong>VORTEX.DEV</strong><br />
+                            <strong>ATHANA</strong><br />
                             Rue du Rhône 14<br />
                             1204 Genève<br />
-                            Email : <a href="mailto:hello@vortex.dev" className="text-vortex-accent hover:underline">hello@vortex.dev</a>
+                            Email : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a>
                         </p>
                     </section>
 
@@ -89,7 +89,7 @@ export default function ConfidentialitePage() {
                             <li><strong>Droit à la limitation et opposition :</strong> Vous opposer au traitement de vos données.</li>
                         </ul>
                         <p className="mt-4">
-                            Pour exercer ces droits, veuillez nous contacter à l'adresse : <a href="mailto:hello@vortex.dev" className="text-vortex-accent hover:underline">hello@vortex.dev</a>.
+                            Pour exercer ces droits, veuillez nous contacter à l'adresse : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a>.
                         </p>
                     </section>
 
