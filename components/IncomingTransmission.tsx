@@ -24,7 +24,7 @@ export const IncomingTransmission: React.FC<IncomingTransmissionProps> = ({ data
                 {/* Decorative Top Bar for Email Client feel */}
                 <div className="h-2 w-full bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink"></div>
 
-                {/* Email Header - Vortex Brand Identity */}
+                {/* Email Header - Athana Brand Identity */}
                 <div className="relative bg-[#050510] p-8 overflow-hidden text-center">
 
                     {/* Abstract Cyber Background in Header */}
@@ -42,7 +42,7 @@ export const IncomingTransmission: React.FC<IncomingTransmissionProps> = ({ data
                             Nouvelle Demande
                         </h1>
                         <p className="text-neon-blue font-mono text-xs uppercase tracking-[0.2em]">
-                            Système Vortex • Lead Qualifié
+                            Système Athana • Lead Qualifié
                         </p>
                     </div>
                 </div>

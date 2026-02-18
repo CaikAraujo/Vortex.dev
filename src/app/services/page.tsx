@@ -142,31 +142,31 @@ const maintenanceTiers: PricingTier[] = [
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Services & Tarifs | VORTEX.DEV',
+    title: 'Services & Tarifs | ATHANA',
     description: 'Solutions complètes de développement web : Sites vitrines, E-commerce, SEO et Google Ads. Transparence totale et prix clairs pour le marché Suisse.',
 };
 
 export default function ServicesPage() {
     return (
-        <div className="bg-vortex-black min-h-screen">
+        <div className="bg-athana-black min-h-screen">
             <Navbar />
 
             {/* Page Header */}
             <section className="pt-40 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-vortex-accent/5 blur-[120px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-athana-accent/5 blur-[120px] pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <Reveal>
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vortex-accent/30 bg-vortex-accent/5 text-vortex-accent text-xs font-mono font-bold tracking-widest uppercase mb-8 hover:bg-vortex-accent/10 transition-colors cursor-default backdrop-blur-sm mx-auto">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-athana-accent/30 bg-athana-accent/5 text-athana-accent text-xs font-mono font-bold tracking-widest uppercase mb-8 hover:bg-athana-accent/10 transition-colors cursor-default backdrop-blur-sm mx-auto">
                             <span className="relative flex h-2 w-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-vortex-accent opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-vortex-accent"></span>
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-athana-accent opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-athana-accent"></span>
                             </span>
                             CAPABILITÉS
                         </div>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
-                            Nos Domaines <span className="text-vortex-accent">d'Expertise.</span>
+                            Nos Domaines <span className="text-athana-accent">d'Expertise.</span>
                         </h1>
-                        <p className="text-xl text-vortex-muted max-w-3xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl text-athana-muted max-w-3xl mx-auto font-light leading-relaxed">
                             L'intelligence technique derrière vos ambitions. Découvrez nos solutions de développement pour structurer, automatiser et garantir à votre entreprise une présence digitale inébranlable.
                         </p>
                     </Reveal>
@@ -179,7 +179,7 @@ export default function ServicesPage() {
                 title="Création de Sites & Apps"
                 subtitle="Choisissez la solution qui correspond à vos besoins et à votre budget."
                 tiers={webDevTiers}
-                colorTheme="vortex"
+                colorTheme="athana"
             />
 
             <ServicePricingSection

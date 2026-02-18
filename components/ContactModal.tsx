@@ -34,16 +34,16 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, con
             ></div>
 
             {/* Modal Content */}
-            <div className="relative w-full max-w-2xl bg-vortex-black border border-white/10 rounded-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+            <div className="relative w-full max-w-2xl bg-athana-black border border-white/10 rounded-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-white/5 bg-white/5">
                     <div className="flex items-center gap-3">
-                        <div className="p-2 bg-vortex-accent/10 rounded-lg text-vortex-accent">
+                        <div className="p-2 bg-athana-accent/10 rounded-lg text-athana-accent">
                             <Terminal size={20} />
                         </div>
                         <div>
                             <h3 className="text-xl font-bold text-white font-display">Démarrer un Projet</h3>
-                            {context && <p className="text-xs text-vortex-accent uppercase tracking-wider font-mono">{context}</p>}
+                            {context && <p className="text-xs text-athana-accent uppercase tracking-wider font-mono">{context}</p>}
                         </div>
                     </div>
                     <button

@@ -84,7 +84,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
         w-full bg-white/5 border rounded-sm p-4 text-white focus:outline-none transition-all
         ${errors[fieldName]
             ? 'border-red-500/50 focus:border-red-500 bg-red-500/5'
-            : 'border-white/10 focus:border-vortex-accent focus:bg-white/10'
+            : 'border-white/10 focus:border-athana-accent focus:bg-white/10'
         }
     `;
 
@@ -92,7 +92,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
         <form className={`space-y-6 relative z-10 ${className}`} onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                    <label htmlFor="name" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Nom</label>
+                    <label htmlFor="name" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Nom</label>
                     <input
                         id="name"
                         type="text"
@@ -104,7 +104,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
                     {errors.name && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.name}</p>}
                 </div>
                 <div className="space-y-2">
-                    <label htmlFor="company" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Entreprise</label>
+                    <label htmlFor="company" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Entreprise</label>
                     <input
                         id="company"
                         type="text"
@@ -118,25 +118,25 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
             </div>
 
             <div className="space-y-2">
-                <label htmlFor="source" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Comment vous nous avez connus ?</label>
+                <label htmlFor="source" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Comment vous nous avez connus ?</label>
                 <select
                     id="source"
                     value={formData.source}
                     onChange={handleChange}
                     className={`${getInputClass('source')} appearance-none cursor-pointer`}
                 >
-                    <option value="" className="bg-vortex-dark text-gray-400">Sélectionnez...</option>
-                    <option value="linkedin" className="bg-vortex-dark text-white">LinkedIn</option>
-                    <option value="google" className="bg-vortex-dark text-white">Google</option>
-                    <option value="referral" className="bg-vortex-dark text-white">Recommandation</option>
-                    <option value="other" className="bg-vortex-dark text-white">Autre</option>
+                    <option value="" className="bg-athana-dark text-gray-400">Sélectionnez...</option>
+                    <option value="linkedin" className="bg-athana-dark text-white">LinkedIn</option>
+                    <option value="google" className="bg-athana-dark text-white">Google</option>
+                    <option value="referral" className="bg-athana-dark text-white">Recommandation</option>
+                    <option value="other" className="bg-athana-dark text-white">Autre</option>
                 </select>
                 {errors.source && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.source}</p>}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                    <label htmlFor="email" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Email</label>
+                    <label htmlFor="email" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Email</label>
                     <input
                         id="email"
                         type="email"
@@ -148,7 +148,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
                     {errors.email && <p className="text-red-400 text-xs flex items-center gap-1"><AlertCircle size={12} /> {errors.email}</p>}
                 </div>
                 <div className="space-y-2">
-                    <label htmlFor="phone" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Téléphone</label>
+                    <label htmlFor="phone" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Téléphone</label>
                     <input
                         id="phone"
                         type="tel"
@@ -162,7 +162,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
             </div>
 
             <div className="space-y-2">
-                <label htmlFor="message" className="text-xs font-bold text-vortex-accent uppercase tracking-widest">Message</label>
+                <label htmlFor="message" className="text-xs font-bold text-athana-accent uppercase tracking-widest">Message</label>
                 <textarea
                     id="message"
                     rows={4}
@@ -176,7 +176,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ className = '', onSubm
 
             <button
                 disabled={isSubmitting}
-                className="w-full bg-vortex-accent text-black font-bold text-lg py-4 rounded-sm hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-athana-accent text-black font-bold text-lg py-4 rounded-sm hover:bg-white transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 {isSubmitting ? 'Initialisation...' : 'Initier le Projet'}
                 {!isSubmitting && <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}

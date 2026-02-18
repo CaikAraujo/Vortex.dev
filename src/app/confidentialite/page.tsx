@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitePage() {
     return (
-        <div className="bg-vortex-black min-h-screen text-vortex-text selection:bg-vortex-accent selection:text-black">
+        <div className="bg-athana-black min-h-screen text-athana-text selection:bg-athana-accent selection:text-black">
             <Navbar />
             <main className="max-w-4xl mx-auto px-6 py-32 space-y-12">
                 <div className="space-y-4">
                     <h1 className="font-display text-4xl md:text-5xl font-bold text-white">Politique de Confidentialité</h1>
-                    <p className="text-xl text-vortex-muted">Conformité à la Nouvelle Loi sur la Protection des Données (nLPD)</p>
+                    <p className="text-xl text-athana-muted">Conformité à la Nouvelle Loi sur la Protection des Données (nLPD)</p>
                 </div>
 
-                <div className="prose prose-invert max-w-none text-vortex-text/80 space-y-8">
+                <div className="prose prose-invert max-w-none text-athana-text/80 space-y-8">
                     <section>
                         <p>
                             La protection de vos données personnelles est une priorité pour ATHANA. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations, conformément aux dispositions de la nouvelle Loi fédérale sur la Protection des Données (nLPD) en Suisse.
@@ -31,7 +31,7 @@ export default function ConfidentialitePage() {
                             <strong>ATHANA</strong><br />
                             Rue du Rhône 14<br />
                             1204 Genève<br />
-                            Email : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a>
+                            Email : <a href="mailto:hello@athana.ch" className="text-athana-accent hover:underline">hello@athana.ch</a>
                         </p>
                     </section>
 
@@ -89,7 +89,7 @@ export default function ConfidentialitePage() {
                             <li><strong>Droit à la limitation et opposition :</strong> Vous opposer au traitement de vos données.</li>
                         </ul>
                         <p className="mt-4">
-                            Pour exercer ces droits, veuillez nous contacter à l'adresse : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a>.
+                            Pour exercer ces droits, veuillez nous contacter à l'adresse : <a href="mailto:hello@athana.ch" className="text-athana-accent hover:underline">hello@athana.ch</a>.
                         </p>
                     </section>
 
@@ -105,7 +105,7 @@ export default function ConfidentialitePage() {
                         <p>
                             Cette politique de confidentialité peut être mise à jour à tout moment pour refléter les évolutions légales ou de nos services. La version en ligne prévaut.
                         </p>
-                        <p className="text-sm text-vortex-muted mt-4">Dernière mise à jour : Février 2026</p>
+                        <p className="text-sm text-athana-muted mt-4">Dernière mise à jour : Février 2026</p>
                     </section>
                 </div>
             </main>

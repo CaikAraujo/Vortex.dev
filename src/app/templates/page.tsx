@@ -54,21 +54,21 @@ export const metadata: Metadata = {
 
 export default function TemplatesPage() {
     return (
-        <div className="bg-vortex-black min-h-screen">
+        <div className="bg-athana-black min-h-screen">
             <Navbar />
 
             {/* Hero Section */}
             <section className="pt-40 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-vortex-accent/5 blur-[120px] pointer-events-none"></div>
+                <div className="absolute inset-0 bg-athana-accent/5 blur-[120px] pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
                     <Reveal>
-                        <span className="inline-block px-4 py-1.5 rounded-full border border-vortex-accent/30 bg-vortex-accent/10 text-vortex-accent text-xs font-bold uppercase tracking-widest mb-6">
+                        <span className="inline-block px-4 py-1.5 rounded-full border border-athana-accent/30 bg-athana-accent/10 text-athana-accent text-xs font-bold uppercase tracking-widest mb-6">
                             Fondations Digitales
                         </span>
                         <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
-                            Solutions <span className="text-vortex-accent">Pré-Architecturées</span>
+                            Solutions <span className="text-athana-accent">Pré-Architecturées</span>
                         </h1>
-                        <p className="text-xl text-vortex-muted max-w-2xl mx-auto font-light leading-relaxed">
+                        <p className="text-xl text-athana-muted max-w-2xl mx-auto font-light leading-relaxed">
                             Des bases de code haute performance, prêtes à être déployées et personnalisées pour votre marque.
                         </p>
                     </Reveal>
@@ -76,24 +76,24 @@ export default function TemplatesPage() {
             </section>
 
             {/* Gallery Section */}
-            <section className="py-12 bg-vortex-black relative">
+            <section className="py-12 bg-athana-black relative">
                 <div className="max-w-7xl mx-auto px-6">
                     <TemplateGallery templates={MOCK_TEMPLATES} />
                 </div>
             </section>
 
             {/* CTA Section */}
-            <section className="py-32 bg-vortex-black relative overflow-hidden">
+            <section className="py-32 bg-athana-black relative overflow-hidden">
                 <div className="absolute inset-0 bg-grid-pattern opacity-[0.05] pointer-events-none"></div>
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <Reveal>
                         <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-                            Besoin de quelque chose <span className="text-vortex-accent">d'Exclusif ?</span>
+                            Besoin de quelque chose <span className="text-athana-accent">d'Exclusif ?</span>
                         </h2>
-                        <p className="text-vortex-muted text-lg mb-8 max-w-2xl mx-auto">
+                        <p className="text-athana-muted text-lg mb-8 max-w-2xl mx-auto">
                             Si les modèles ne correspondent pas à 100% à votre vision, notre équipe peut créer un design sur mesure pour votre marque.
                         </p>
-                        <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-vortex-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+                        <a href="/contact" className="inline-flex h-12 items-center justify-center rounded-sm bg-white px-8 text-sm font-medium text-black transition-colors hover:bg-athana-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
                             Parler à des Experts
                         </a>
                     </Reveal>

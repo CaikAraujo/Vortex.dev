@@ -34,7 +34,10 @@ export const metadata: Metadata = {
         'Hébergement web Suisse', 'Site internet professionnel', 'Identité visuelle', 'UX Research',
         'Prototypage Figma', 'Développement Front-end', 'Développement Back-end', 'API Integration',
         'Web App Progressive (PWA)', 'Consulting Tech', 'Agence marketing digital', 'Growth Hacking',
-        'Référencement Google', 'Lausanne', 'Zurich', 'Vaud'
+        'Référencement Google', 'Lausanne', 'Zurich', 'Vaud',
+        'Agence web', 'Sites internet', 'Développement web', 'Création de sites internet Genève',
+        'Agence web Suisse romande', 'Développeur web Genève', 'Création site internet professionnel',
+        'Refonte site web Genève', 'Agence digitale Genève', 'Freelance webmaster Genève'
     ],
     authors: [{ name: 'ATHANA Team' }],
     creator: 'ATHANA',
@@ -86,7 +89,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr-CH" className={`${outfit.variable} ${spaceGrotesk.variable}`}>
-            <body className="bg-vortex-black antialiased">
+            <body className="bg-athana-black antialiased">
                 {/* Google Analytics / Ads Scripts */}
                 {/* <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"

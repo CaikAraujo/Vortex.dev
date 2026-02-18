@@ -4,7 +4,7 @@ import React from 'react';
 import { IncomingTransmission } from '../../../components/IncomingTransmission';
 import { ClientData, ProjectType, BudgetRange } from '../../../types';
 
-// Mock data representing a real client submission for Vortex
+// Mock data representing a real client submission for Athana
 const PREVIEW_DATA: ClientData = {
     name: "Caik Araujo",
     email: "caik.dantas007@gmail.com",
@@ -12,7 +12,7 @@ const PREVIEW_DATA: ClientData = {
     projectType: ProjectType.WEB_APP,
     budget: BudgetRange.MID,
     deadline: "Urgent (30 Jours)",
-    description: "Bonjour, je suis le travail de Vortex.dev depuis un moment et j'aimerais un devis pour un système SaaS. J'ai besoin d'un panneau d'administration avec un design dark/néon, similaire à votre style. Le système doit avoir une connexion sociale et un tableau de bord de métriques en temps réel.",
+    description: "Bonjour, je suis le travail de Athana.dev depuis un moment et j'aimerais un devis pour un système SaaS. J'ai besoin d'un panneau d'administration avec un design dark/néon, similaire à votre style. Le système doit avoir une connexion sociale et un tableau de bord de métriques en temps réel.",
     timestamp: new Date().toLocaleString('fr-CH', { dateStyle: 'full', timeStyle: 'short' })
 };
 
@@ -20,7 +20,7 @@ export default function EmailPreviewPage() {
     return (
         <div className="min-h-screen w-full relative flex flex-col items-center justify-center p-4 md:p-8 bg-black">
 
-            {/* Background (Simplified VortexBackground) */}
+            {/* Background (Simplified AthanaBackground) */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[-20%] left-[-20%] w-[70%] h-[70%] bg-neon-purple/20 blur-[150px] rounded-full"></div>
                 <div className="absolute bottom-[-20%] right-[-20%] w-[70%] h-[70%] bg-neon-blue/20 blur-[150px] rounded-full"></div>

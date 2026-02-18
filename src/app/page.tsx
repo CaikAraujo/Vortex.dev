@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <div className="bg-vortex-black min-h-screen text-vortex-text selection:bg-vortex-accent selection:text-black">
+        <div className="bg-athana-black min-h-screen text-athana-text selection:bg-athana-accent selection:text-black">
             <Navbar />
             <main>
                 <Hero />

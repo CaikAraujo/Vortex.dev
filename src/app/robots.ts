@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://vortex-dev.com';
+    const baseUrl = 'https://athana.ch';
 
     return {
         rules: {

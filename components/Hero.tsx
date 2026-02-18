@@ -4,25 +4,25 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 import { Reveal } from './ui/Section';
-import { VortexCanvas } from './ui/VortexCanvas';
+import { AthanaCanvas } from './ui/AthanaCanvas';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-vortex-black">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-athana-black">
       {/* Background Animation */}
       <div className="absolute inset-0 z-0">
-        <VortexCanvas />
+        <AthanaCanvas />
         {/* Subtle Overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-vortex-black/30 via-transparent to-vortex-black pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-athana-black/30 via-transparent to-athana-black pointer-events-none"></div>
         <div className="absolute inset-0 bg-grid-pattern bg-[length:60px_60px] opacity-[0.03] pointer-events-none"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <Reveal>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-vortex-accent/30 bg-vortex-accent/5 text-vortex-accent text-xs font-mono font-bold tracking-widest uppercase mb-8 hover:bg-vortex-accent/10 transition-colors cursor-default backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-athana-accent/30 bg-athana-accent/5 text-athana-accent text-xs font-mono font-bold tracking-widest uppercase mb-8 hover:bg-athana-accent/10 transition-colors cursor-default backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-vortex-accent opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-vortex-accent"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-athana-accent opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-athana-accent"></span>
             </span>
             Architecture Digitale
           </div>
@@ -31,14 +31,14 @@ export const Hero: React.FC = () => {
         <Reveal delay={200}>
           <h1 className="font-display font-bold text-5xl md:text-7xl lg:text-9xl tracking-tighter text-white mb-8 leading-[0.9]">
             BÂTISSEZ VOTRE <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-vortex-accent via-white to-vortex-accent animate-pulse bg-300% bg-left">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-athana-accent via-white to-athana-accent animate-pulse bg-300% bg-left">
               MONUMENT DIGITAL.
             </span>
           </h1>
         </Reveal>
 
         <Reveal delay={400}>
-          <p className="max-w-2xl mx-auto text-vortex-muted text-lg md:text-xl mb-12 leading-relaxed font-light backdrop-blur-sm p-4 rounded-lg bg-black/20 border border-white/5">
+          <p className="max-w-2xl mx-auto text-athana-muted text-lg md:text-xl mb-12 leading-relaxed font-light backdrop-blur-sm p-4 rounded-lg bg-black/20 border border-white/5">
             Votre <span className="text-white font-medium">agence genevoise</span> pour des solutions digitales <span className="text-white font-medium">robustes et pérennes</span>.
             Alliez performance technique et <span className="text-white font-medium">fiabilité suisse</span> pour propulser votre entreprise.
           </p>
@@ -48,13 +48,13 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <a
               href="/services"
-              className="w-full md:w-auto px-8 py-4 bg-vortex-accent text-black font-bold rounded hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all duration-300 transform hover:-translate-y-1"
+              className="w-full md:w-auto px-8 py-4 bg-athana-accent text-black font-bold rounded hover:bg-white hover:shadow-[0_0_30px_rgba(0,240,255,0.6)] transition-all duration-300 transform hover:-translate-y-1"
             >
               Démarrer un Projet _&gt;
             </a>
             <Link
               href="/projets"
-              className="w-full md:w-auto px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium rounded hover:border-vortex-accent hover:text-vortex-accent transition-colors duration-300"
+              className="w-full md:w-auto px-8 py-4 border border-white/10 bg-white/5 backdrop-blur-md text-white font-medium rounded hover:border-athana-accent hover:text-athana-accent transition-colors duration-300"
             >
               Voir le Portfolio
             </Link>

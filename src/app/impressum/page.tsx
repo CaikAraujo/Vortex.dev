@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 export default function ImpressumPage() {
     return (
-        <div className="bg-vortex-black min-h-screen text-vortex-text selection:bg-vortex-accent selection:text-black">
+        <div className="bg-athana-black min-h-screen text-athana-text selection:bg-athana-accent selection:text-black">
             <Navbar />
             <main className="max-w-4xl mx-auto px-6 py-32 space-y-12">
                 <div className="space-y-4">
                     <h1 className="font-display text-4xl md:text-5xl font-bold text-white">Mentions Légales</h1>
-                    <p className="text-xl text-vortex-muted">Impressum</p>
+                    <p className="text-xl text-athana-muted">Impressum</p>
                 </div>
 
-                <div className="prose prose-invert max-w-none text-vortex-text/80 space-y-8">
+                <div className="prose prose-invert max-w-none text-athana-text/80 space-y-8">
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">Éditeur du Site</h2>
                         <p>
@@ -28,8 +28,8 @@ export default function ImpressumPage() {
                         </p>
                         <p className="mt-4">
                             <strong>Contact :</strong><br />
-                            Email : <a href="mailto:hello@athana.ch" className="text-vortex-accent hover:underline">hello@athana.ch</a><br />
-                            Téléphone : <a href="tel:+41783399895" className="text-vortex-accent hover:underline">+41 78 339 98 95</a>
+                            Email : <a href="mailto:hello@athana.ch" className="text-athana-accent hover:underline">hello@athana.ch</a><br />
+                            Téléphone : <a href="tel:+41783399895" className="text-athana-accent hover:underline">+41 78 339 98 95</a>
                         </p>
                     </section>
 

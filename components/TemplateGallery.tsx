@@ -26,7 +26,7 @@ interface TemplateCardProps {
 const TemplateCard: React.FC<TemplateCardProps> = ({ template, index }) => {
     const { openModal } = useModal();
     return (
-        <div className="group relative bg-vortex-dark/50 border border-white/5 rounded-2xl overflow-hidden hover:border-vortex-accent/40 hover:shadow-[0_0_40px_-10px_rgba(0,240,255,0.15)] transition-all duration-500 h-full flex flex-col">
+        <div className="group relative bg-athana-dark/50 border border-white/5 rounded-2xl overflow-hidden hover:border-athana-accent/40 hover:shadow-[0_0_40px_-10px_rgba(0,240,255,0.15)] transition-all duration-500 h-full flex flex-col">
             {/* Image / Preview Placeholder */}
             <div className={`h-48 w-full relative overflow-hidden group-hover:scale-105 transition-transform duration-700`}>
                 <img
@@ -39,14 +39,14 @@ const TemplateCard: React.FC<TemplateCardProps> = ({ template, index }) => {
 
             <div className="p-6 flex flex-col flex-1">
                 <div className="mb-4">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-vortex-accent transition-colors">{template.name}</h3>
-                    <p className="text-vortex-muted text-sm line-clamp-2">{template.description}</p>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-athana-accent transition-colors">{template.name}</h3>
+                    <p className="text-athana-muted text-sm line-clamp-2">{template.description}</p>
                 </div>
 
                 <ul className="space-y-2 mb-6 flex-1">
                     {template.features.slice(0, 3).map((feature, i) => (
                         <li key={i} className="flex items-center gap-2 text-xs text-gray-400">
-                            <Zap size={14} className="text-vortex-accent" />
+                            <Zap size={14} className="text-athana-accent" />
                             {feature}
                         </li>
                     ))}
@@ -55,7 +55,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({ template, index }) => {
                 <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/5 gap-3">
                     <div className="flex flex-col">
                         <span className="text-2xl font-display font-bold text-white leading-tight">{template.price}</span>
-                        <span className="text-[10px] text-vortex-accent uppercase tracking-wider font-semibold">
+                        <span className="text-[10px] text-athana-accent uppercase tracking-wider font-semibold">
                             Personnalisation Incluse
                         </span>
                     </div>
@@ -71,7 +71,7 @@ const TemplateCard: React.FC<TemplateCardProps> = ({ template, index }) => {
                         </a>
                         <button
                             onClick={() => openModal(`Template: ${template.name}`)}
-                            className="bg-white text-black hover:bg-vortex-accent font-bold py-2 px-4 rounded-lg flex items-center gap-2 text-sm transition-all duration-300 cursor-pointer"
+                            className="bg-white text-black hover:bg-athana-accent font-bold py-2 px-4 rounded-lg flex items-center gap-2 text-sm transition-all duration-300 cursor-pointer"
                         >
                             Déployer cette base
                             <ArrowRight size={16} />

@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? 'bg-vortex-black/80 backdrop-blur-md border-b border-white/5 py-4'
+        ? 'bg-athana-black/80 backdrop-blur-md border-b border-white/5 py-4'
         : 'bg-transparent py-6'
         }`}
     >
@@ -53,19 +53,19 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-8">
           <a
             href="/"
-            className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
+            className="text-sm font-medium text-athana-text/80 hover:text-athana-accent transition-colors"
           >
             Accueil
           </a>
           <a
             href="/services"
-            className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
+            className="text-sm font-medium text-athana-text/80 hover:text-athana-accent transition-colors"
           >
             Services
           </a>
           <a
             href="/templates"
-            className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
+            className="text-sm font-medium text-athana-text/80 hover:text-athana-accent transition-colors"
           >
             Templates
           </a>
@@ -73,14 +73,14 @@ export const Navbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-vortex-text/80 hover:text-vortex-accent transition-colors"
+              className="text-sm font-medium text-athana-text/80 hover:text-athana-accent transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="/services"
-            className="bg-white text-black px-5 py-2.5 text-sm font-bold rounded hover:bg-vortex-accent hover:scale-105 transition-all flex items-center gap-2 group"
+            className="bg-white text-black px-5 py-2.5 text-sm font-bold rounded hover:bg-athana-accent hover:scale-105 transition-all flex items-center gap-2 group"
           >
             Démarrer un Projet
             <span className="group-hover:translate-x-1 transition-transform" aria-hidden="true">_&gt;</span>
@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white hover:text-vortex-accent"
+          className="md:hidden text-white hover:text-athana-accent"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
@@ -100,25 +100,25 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-vortex-dark border-b border-white/10 p-6 flex flex-col gap-6 animate-fade-in shadow-2xl max-h-[80vh] overflow-y-auto">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-athana-dark border-b border-white/10 p-6 flex flex-col gap-6 animate-fade-in shadow-2xl max-h-[80vh] overflow-y-auto">
           {/* Static Links */}
           <a
             href="/"
-            className="text-lg font-medium text-white hover:text-vortex-accent"
+            className="text-lg font-medium text-white hover:text-athana-accent"
             onClick={() => setIsOpen(false)}
           >
             Accueil
           </a>
           <a
             href="/services"
-            className="text-lg font-medium text-white hover:text-vortex-accent"
+            className="text-lg font-medium text-white hover:text-athana-accent"
             onClick={() => setIsOpen(false)}
           >
             Services
           </a>
           <a
             href="/templates"
-            className="text-lg font-medium text-white hover:text-vortex-accent"
+            className="text-lg font-medium text-white hover:text-athana-accent"
             onClick={() => setIsOpen(false)}
           >
             Templates
@@ -129,7 +129,7 @@ export const Navbar: React.FC = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-lg font-medium text-white hover:text-vortex-accent"
+              className="text-lg font-medium text-white hover:text-athana-accent"
               onClick={() => setIsOpen(false)}
             >
               {link.label}
@@ -137,7 +137,7 @@ export const Navbar: React.FC = () => {
           ))}
           <a
             href="/services"
-            className="bg-vortex-accent text-black text-center py-3 rounded font-bold uppercase tracking-wider"
+            className="bg-athana-accent text-black text-center py-3 rounded font-bold uppercase tracking-wider"
             onClick={() => setIsOpen(false)}
           >
             Démarrer un Projet

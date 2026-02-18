@@ -99,17 +99,17 @@ export const Workflow: React.FC = () => {
     }, [hasStarted]);
 
     return (
-        <section ref={sectionRef} className="py-32 bg-vortex-black relative overflow-hidden">
+        <section ref={sectionRef} className="py-32 bg-athana-black relative overflow-hidden">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.05] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <Reveal className="mb-24 text-center">
-                    <span className="text-vortex-accent font-mono text-sm tracking-[0.2em] uppercase block mb-4">
+                    <span className="text-athana-accent font-mono text-sm tracking-[0.2em] uppercase block mb-4">
                         Processus
                     </span>
                     <h2 className="font-display text-4xl md:text-6xl font-bold text-white">
-                        Processus <span className="text-vortex-accent">Vortex.</span>
+                        Processus <span className="text-athana-accent">Athana.</span>
                     </h2>
                 </Reveal>
 
@@ -118,7 +118,7 @@ export const Workflow: React.FC = () => {
                     <div className="hidden md:block absolute top-[60px] left-0 w-full h-[1px] bg-white/10 z-0">
                         {/* Animated Progress Line */}
                         <div
-                            className="h-full bg-vortex-accent shadow-[0_0_15px_rgba(0,240,255,0.8)] transition-all ease-in-out"
+                            className="h-full bg-athana-accent shadow-[0_0_15px_rgba(0,240,255,0.8)] transition-all ease-in-out"
                             style={{
                                 width: `${progressWidth}%`,
                                 transitionDuration: '1000ms'
@@ -139,24 +139,24 @@ export const Workflow: React.FC = () => {
                                         {/* The Node Container */}
                                         <div className="relative mb-8 cursor-pointer">
                                             {/* Glow Effect behind circle */}
-                                            <div className={`absolute inset-0 bg-vortex-accent/20 rounded-full blur-xl transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}></div>
+                                            <div className={`absolute inset-0 bg-athana-accent/20 rounded-full blur-xl transition-opacity duration-500 ${isActive ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}></div>
 
                                             {/* Main Circle */}
-                                            <div className={`w-[120px] h-[120px] bg-vortex-black rounded-full border flex items-center justify-center relative z-10 transition-all duration-500
+                                            <div className={`w-[120px] h-[120px] bg-athana-black rounded-full border flex items-center justify-center relative z-10 transition-all duration-500
                         ${isActive
-                                                    ? 'border-vortex-accent scale-110 shadow-[0_0_30px_rgba(0,240,255,0.2)]'
-                                                    : 'border-white/10 group-hover:border-vortex-accent group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(0,240,255,0.2)]'
+                                                    ? 'border-athana-accent scale-110 shadow-[0_0_30px_rgba(0,240,255,0.2)]'
+                                                    : 'border-white/10 group-hover:border-athana-accent group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(0,240,255,0.2)]'
                                                 }`}>
 
                                                 {/* Inner Ring (Decorative) */}
                                                 <div className={`absolute inset-2 rounded-full border border-dashed transition-all duration-700
                           ${isActive
-                                                        ? 'border-vortex-accent/30 rotate-90'
-                                                        : 'border-white/5 group-hover:border-vortex-accent/30 group-hover:rotate-90'
+                                                        ? 'border-athana-accent/30 rotate-90'
+                                                        : 'border-white/5 group-hover:border-athana-accent/30 group-hover:rotate-90'
                                                     }`}></div>
 
                                                 <Icon
-                                                    className={`w-10 h-10 transition-colors duration-300 ${isActive ? 'text-vortex-accent' : 'text-white group-hover:text-vortex-accent'}`}
+                                                    className={`w-10 h-10 transition-colors duration-300 ${isActive ? 'text-athana-accent' : 'text-white group-hover:text-athana-accent'}`}
                                                     strokeWidth={1.5}
                                                 />
                                             </div>
@@ -164,8 +164,8 @@ export const Workflow: React.FC = () => {
                                             {/* Orbiting Number Badge */}
                                             <div className={`absolute top-0 right-0 translate-x-1/4 -translate-y-1/4 w-10 h-10 rounded-full border flex items-center justify-center z-20 transition-all duration-300
                         ${isActive
-                                                    ? 'bg-vortex-accent border-vortex-accent text-black'
-                                                    : 'bg-vortex-dark border-white/10 text-vortex-muted group-hover:border-vortex-accent group-hover:bg-vortex-accent group-hover:text-black'
+                                                    ? 'bg-athana-accent border-athana-accent text-black'
+                                                    : 'bg-athana-dark border-white/10 text-athana-muted group-hover:border-athana-accent group-hover:bg-athana-accent group-hover:text-black'
                                                 }`}>
                                                 <span className="font-mono text-xs font-bold">{step.id}</span>
                                             </div>
@@ -173,10 +173,10 @@ export const Workflow: React.FC = () => {
 
                                         {/* Text Content */}
                                         <div className="px-4">
-                                            <h3 className={`font-display text-xl font-bold mb-3 transition-colors duration-300 ${isActive ? 'text-vortex-accent' : 'text-white group-hover:text-vortex-accent'}`}>
+                                            <h3 className={`font-display text-xl font-bold mb-3 transition-colors duration-300 ${isActive ? 'text-athana-accent' : 'text-white group-hover:text-athana-accent'}`}>
                                                 {step.title}
                                             </h3>
-                                            <p className="text-sm text-vortex-muted leading-relaxed font-light">
+                                            <p className="text-sm text-athana-muted leading-relaxed font-light">
                                                 {step.description}
                                             </p>
                                         </div>

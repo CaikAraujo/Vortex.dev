@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://vortex-dev.com'; // Placeholder, update locally if needed
+    const baseUrl = 'https://athana.ch';
 
     return [
         {

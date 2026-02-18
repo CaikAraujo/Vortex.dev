@@ -4,13 +4,13 @@
   --font-sans: "Outfit", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 
-  --color-vortex-black: #050505;
-  --color-vortex-dark: #0A0A0A;
-  --color-vortex-gray: #171717;
-  --color-vortex-accent: #C5A059;
-  --color-vortex-accentHover: #D4AF37;
-  --color-vortex-text: #F8FAFC;
-  --color-vortex-muted: #94A3B8;
+  --color-athana-black: #050505;
+  --color-athana-dark: #0A0A0A;
+  --color-athana-gray: #171717;
+  --color-athana-accent: #C5A059;
+  --color-athana-accentHover: #D4AF37;
+  --color-athana-text: #F8FAFC;
+  --color-athana-muted: #94A3B8;
 
   --color-bg-primary: #050505;
   --color-bg-card: #171717;

@@ -63,8 +63,8 @@ export const PRICING: PricingTier[] = [
     ],
   },
   {
-    id: 'vortex',
-    name: 'Vortex',
+    id: 'athana',
+    name: 'Athana',
     price: 'Sur Mesure',
     description: 'Solutions de génie logiciel sur mesure.',
     highlight: false,

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 
-export const VortexCanvas: React.FC = () => {
+export const AthanaCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
